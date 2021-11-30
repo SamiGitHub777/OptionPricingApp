@@ -4,8 +4,6 @@ using OptionPricingWPFClient.ViewModel;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace OptionPricingWPFClient.Models
 {
@@ -33,10 +31,6 @@ namespace OptionPricingWPFClient.Models
 
         public List<OptionModel> GetAllOptions()
         {
-            // TODO
-            //List<OptionModel> res = new List<OptionModel>();
-            //res.Add(new OptionModel(OptionsPricingViewModel.OptionTypeEnum.AmericanCall,
-            //   DateTime.Now, 0, 0, new UnderlyingModel("fromBackEnd", 0, OptionsPricingViewModel.UnderlyingTypeEnum.STOCK, 0)));
             return optionPricingTcpTransportManager.GetAllOption()
             .Select(x => modelDomainConverter.ToOptionModel(x))
             .ToList(); ;

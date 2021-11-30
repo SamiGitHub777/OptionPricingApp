@@ -3,7 +3,6 @@ using LoggerLog4net;
 using OptionPricingDomain;
 using OptionPricingRepository;
 using System.Diagnostics;
-using System.Threading;
 
 namespace OptionPricingDomainService
 {

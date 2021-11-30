@@ -104,7 +104,7 @@
                                     Width="100" 
                                     Height="20"
                                     Text="{Binding RiskFreeRate, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay, StringFormat=N2}" />
-            
+
         </Grid>
 
         <Grid Grid.Row="2" Margin="10 10 0 0">
@@ -195,8 +195,6 @@
         </Grid>
 
 
-
-
         <Grid Grid.Row="4" Margin="10 10 0 0">
             <Grid.RowDefinitions>
                 <RowDefinition Height="auto" />
@@ -220,7 +218,6 @@
             </ComboBox>
 
         </Grid>
-
 
 
         <Grid Grid.Row="5" Margin="10 25 0 0">
@@ -315,11 +312,6 @@
                                                 CornerRadius="20"/>
                 </StackPanel>
             </StackPanel>
-
-
         </Grid>
-
     </Grid>
-
-
 </UserControl>
