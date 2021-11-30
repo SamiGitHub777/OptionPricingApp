@@ -1,5 +1,4 @@
-﻿using System;
-using System.Threading;
+﻿using System.Threading;
 using LoggerLog4net;
 using OptionPricingInfrastructure;
 
@@ -36,6 +35,5 @@ namespace OptionPricingClientConsole
             }
             logger.Info("All client threads finished execution");
         }
-
     }
 }

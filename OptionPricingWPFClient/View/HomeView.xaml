@@ -12,10 +12,6 @@
     </UserControl.Background>
 
     <Grid>
-      
-
-
-
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="60"/>
@@ -30,9 +26,6 @@
             <RowDefinition Height="60"/>
             <RowDefinition Height="60"/>
         </Grid.RowDefinitions>
-
-
-
 
         <TextBlock 
                 Grid.Column="0"
@@ -129,10 +122,6 @@
                                                 CornerRadius="20"/>
                 </StackPanel>
             </StackPanel>
-
-
         </Grid>
-
     </Grid>
-
 </UserControl>

@@ -59,6 +59,7 @@ namespace OptionPricingInfrastructure
         {
             string threadName = "Thread " + threadNumber.ToString();
             DateTime today = DateTime.Now;
+            // some dummy objects
             Maturity maturity = new Maturity(today.Year + 2, today.Month, today.Day);
             Underlying udl = new Underlying("DE_DAX_TEST", 18000d, UnderlyingTypeEnum.INDEX, 0.3d);
             Option option = new Option(ContractEnum.EuropeanCall, maturity, 15000d, 0.04d, udl);

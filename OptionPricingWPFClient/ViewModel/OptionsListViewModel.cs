@@ -21,8 +21,6 @@ namespace OptionPricingWPFClient.ViewModel
                 {
                     itemsCollection = new ObservableCollection<OptionModel>();
                 }
-                //this.itemsCollection.Add(new OptionModel(OptionsPricingViewModel.OptionTypeEnum.AmericanCall,
-                //    DateTime.Now, 0, 0, new UnderlyingModel("unknown", 0, OptionsPricingViewModel.UnderlyingTypeEnum.STOCK, 0)));
                 return itemsCollection;
             }
             set

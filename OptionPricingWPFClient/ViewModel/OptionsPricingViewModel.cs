@@ -1,16 +1,7 @@
-﻿using CommonServiceLocator;
-using GalaSoft.MvvmLight.Command;
-using MahApps.Metro.IconPacks;
-using OptionPricingWPFClient.Commands;
+﻿using GalaSoft.MvvmLight.Command;
 using OptionPricingWPFClient.Models;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Reflection;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Input;
-using WPFHelper;
 
 namespace OptionPricingWPFClient.ViewModel
 {
@@ -49,9 +40,11 @@ namespace OptionPricingWPFClient.ViewModel
         }
         private PricingModelEnum _pricingModel;
 
-        public double UnderlyingSpot { 
-            get => _underlyingSpot; 
-            set => SetProperty<double>(ref _underlyingSpot, value); }
+        public double UnderlyingSpot
+        {
+            get => _underlyingSpot;
+            set => SetProperty<double>(ref _underlyingSpot, value);
+        }
         private double _underlyingSpot;
 
         public double UnderlyingVol { get => _underlyingVol; set => SetProperty<double>(ref _underlyingVol, value); }
@@ -78,18 +71,6 @@ namespace OptionPricingWPFClient.ViewModel
         public double Price { get => _price; set => SetProperty<double>(ref _price, value); }
         private double _price;
 
-        /*
-        public PricingModelEnum PricingModel => price.PricingModel;
-        public double UnderlyingSpot => price.OptionObj.UnderlyingObj.Spot;
-        public double UnderlyingVol => price.OptionObj.UnderlyingObj.Volatility;
-        public string UnderlyingName => price.OptionObj.UnderlyingObj.UnderlyingName;
-        public UnderlyingTypeEnum UnderlyingType => price.OptionObj.UnderlyingObj.UnderlyingType;
-        public OptionTypeEnum OptionType => price.OptionObj.OptionType;
-        public DateTime Maturity => price.OptionObj.Maturity;
-        public double Price => price.PriceValue;
-        */
-        //private readonly Price price;
-
         public ICommand PriceCommand { get; set; }
         private readonly IModelArgsValidator modelArgsValidator;
         private readonly IOptionPricingModel optionPricingModel;
@@ -97,17 +78,8 @@ namespace OptionPricingWPFClient.ViewModel
 
         public OptionsPricingViewModel(IModelArgsValidator modelArgsValidator, IOptionPricingModel optionPricingModel)
         {
-            //this.price = price;
             this.PriceCommand = new RelayCommand(OnClickPriceCommand);
             this.modelArgsValidator = modelArgsValidator;
-            this.optionPricingModel = optionPricingModel;
-
-            /*
-            Underlying underlying = new Underlying("FR_BNP", 150, OptionsPricingViewModel.UnderlyingTypeEnum.STOCK, 0.3);
-            Option option = new Option(OptionsPricingViewModel.OptionTypeEnum.AmericanCall, new DateTime(), 100, 0.1, underlying);
-            this.price = new Price(999, OptionsPricingViewModel.PricingModelEnum.BlackScholes, option);
-            this.PriceCommand = new PriceOptionCommand(this, this.price);
-            */
         }
 
         public void OnClickPriceCommand()
@@ -119,7 +91,7 @@ namespace OptionPricingWPFClient.ViewModel
             CheckArgs(modelArgsValidator.IsDoubleValid(_strike), nameof(_strike));
             CheckArgs(modelArgsValidator.IsDoubleValid(_riskFreeRate), nameof(_riskFreeRate));
             UnderlyingModel underlyingModel = new UnderlyingModel(_underlyingName, _underlyingSpot, _underlyingType, _underlyingVol);
-            OptionModel optionModel =  new OptionModel(_optionType, _maturity, _strike, _riskFreeRate, underlyingModel);
+            OptionModel optionModel = new OptionModel(_optionType, _maturity, _strike, _riskFreeRate, underlyingModel);
             PriceModel priceModel = new PriceModel(_price, _pricingModel, optionModel);
             PriceModel result = optionPricingModel.PriceOption(priceModel);
             Price = result.PriceValue;

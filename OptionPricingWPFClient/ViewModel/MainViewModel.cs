@@ -21,14 +21,9 @@ namespace OptionPricingWPFClient.ViewModel
     /// </summary>
     public class MainViewModel : HamburgerMenuItemViewModelBase
     {
-        //private static readonly ILogger logger = LogManager.GetLogger(MethodBase.GetCurrentMethod().DeclaringType);
-
-        /// <summary>
         /// Initializes a new instance of the MainViewModel class.
-        /// </summary>
         public MainViewModel()
         {
-            //logger.Info("Starting pricer");
             Title = "Pricer";
             AppVersion = $"Version: {Assembly.GetExecutingAssembly().GetName().Version.ToString(3)}";
             Author = "CSharpTraining";
@@ -38,7 +33,7 @@ namespace OptionPricingWPFClient.ViewModel
         private void CreateMenuItems()
         {
             AddHamburgerMenuIconItem("Home", "Home", PackIconMaterialKind.Home, ServiceLocator.Current.GetInstance<HomeViewModel>());
-            AddHamburgerMenuIconItem("Options Pricing", "Options Pricing", PackIconMaterialKind.CurrencyEur, ServiceLocator.Current.GetInstance<OptionsPricingViewModel>()); // TODO
+            AddHamburgerMenuIconItem("Options Pricing", "Options Pricing", PackIconMaterialKind.CurrencyEur, ServiceLocator.Current.GetInstance<OptionsPricingViewModel>());
             AddHamburgerMenuIconItem("Option List", "Option List", PackIconMaterialKind.Tools, ServiceLocator.Current.GetInstance<OptionsListViewModel>());
             AddHamburgerMenuIconItem("Information", "Information", PackIconMaterialKind.InformationOutline, ServiceLocator.Current.GetInstance<InformationViewModel>());
         }
