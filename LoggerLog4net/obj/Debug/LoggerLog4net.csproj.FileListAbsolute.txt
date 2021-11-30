@@ -1,0 +1,10 @@
+C:\Users\Sami B\source\repos\LoggerLog4net\bin\Debug\log4net.config
+C:\Users\Sami B\source\repos\LoggerLog4net\bin\Debug\LoggerLog4net.exe.config
+C:\Users\Sami B\source\repos\LoggerLog4net\bin\Debug\LoggerLog4net.exe
+C:\Users\Sami B\source\repos\LoggerLog4net\bin\Debug\LoggerLog4net.pdb
+C:\Users\Sami B\source\repos\LoggerLog4net\bin\Debug\log4net.dll
+C:\Users\Sami B\source\repos\LoggerLog4net\bin\Debug\log4net.xml
+C:\Users\Sami B\source\repos\LoggerLog4net\obj\Debug\LoggerLog4net.csproj.CoreCompileInputs.cache
+C:\Users\Sami B\source\repos\LoggerLog4net\obj\Debug\LoggerLog4net.csproj.CopyComplete
+C:\Users\Sami B\source\repos\LoggerLog4net\obj\Debug\LoggerLog4net.exe
+C:\Users\Sami B\source\repos\LoggerLog4net\obj\Debug\LoggerLog4net.pdb

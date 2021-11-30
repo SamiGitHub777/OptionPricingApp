@@ -1,0 +1,84 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Sami B\\source\\repos\\C-sharp-training\\C-sharp-training.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Sami B\\source\\repos\\C-sharp-training\\C-sharp-training.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Sami B\\source\\repos\\C-sharp-training\\C-sharp-training.csproj",
+        "projectName": "C-sharp-training",
+        "projectPath": "C:\\Users\\Sami B\\source\\repos\\C-sharp-training\\C-sharp-training.csproj",
+        "packagesPath": "C:\\Users\\Sami B\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Sami B\\source\\repos\\C-sharp-training\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Sami B\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net472"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net472": {
+            "targetAlias": "net472",
+            "projectReferences": {
+              "C:\\Users\\Sami B\\source\\repos\\OptionPricingDAO\\OptionPricingDAO.csproj": {
+                "projectPath": "C:\\Users\\Sami B\\source\\repos\\OptionPricingDAO\\OptionPricingDAO.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net472": {
+          "targetAlias": "net472",
+          "dependencies": {
+            "MathNet.Numerics": {
+              "target": "Package",
+              "version": "[4.15.0, )"
+            },
+            "NSubstitute": {
+              "target": "Package",
+              "version": "[4.2.2, )"
+            },
+            "System.ComponentModel.Annotations": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.3, )"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+        }
+      },
+      "runtimes": {
+        "win7-x86": {
+          "#import": []
+        }
+      }
+    },
+    "C:\\Users\\Sami B\\source\\repos\\OptionPricingDAO\\OptionPricingDAO.csproj": {
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Sami B\\source\\repos\\OptionPricingDAO\\OptionPricingDAO.csproj",
+        "projectName": "OptionPricingDAO",
+        "projectPath": "C:\\Users\\Sami B\\source\\repos\\OptionPricingDAO\\OptionPricingDAO.csproj"
+      },
+      "frameworks": {
+        "net472": {}
+      }
+    }
+  }
+}

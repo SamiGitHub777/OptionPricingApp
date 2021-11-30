@@ -1,0 +1,16 @@
+ 2021-11-19 13:37:37 – INFO  LoggerLog4net.Log4NetWrapper [1] This is Info 
+ stacktrace:LoggerLog4net.Program.Main > LoggerLog4net.Log4NetWrapper.Info 
+ 2021-11-19 13:37:37 – DEBUG LoggerLog4net.Log4NetWrapper [1] This is Debug 
+ stacktrace:LoggerLog4net.Program.Main > LoggerLog4net.Log4NetWrapper.Debug 
+ 2021-11-19 13:37:37 – ERROR LoggerLog4net.Log4NetWrapper [1] This is Error 
+ stacktrace:LoggerLog4net.Program.Main > LoggerLog4net.Log4NetWrapper.Error 
+ 2021-11-19 13:37:37 – WARN  LoggerLog4net.Log4NetWrapper [1] This is Warn 
+ stacktrace:LoggerLog4net.Program.Main > LoggerLog4net.Log4NetWrapper.Warn 
+ 2021-11-26 10:40:42 – INFO  LoggerLog4net.Log4NetWrapper [1] This is Info 
+ stacktrace:LoggerLog4net.Program.Main > LoggerLog4net.Log4NetWrapper.Info 
+ 2021-11-26 10:40:42 – DEBUG LoggerLog4net.Log4NetWrapper [1] This is Debug 
+ stacktrace:LoggerLog4net.Program.Main > LoggerLog4net.Log4NetWrapper.Debug 
+ 2021-11-26 10:40:42 – ERROR LoggerLog4net.Log4NetWrapper [1] This is Error 
+ stacktrace:LoggerLog4net.Program.Main > LoggerLog4net.Log4NetWrapper.Error 
+ 2021-11-26 10:40:42 – WARN  LoggerLog4net.Log4NetWrapper [1] This is Warn 
+ stacktrace:LoggerLog4net.Program.Main > LoggerLog4net.Log4NetWrapper.Warn 

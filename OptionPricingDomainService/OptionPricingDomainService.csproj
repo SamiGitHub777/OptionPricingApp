@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7F75BB92-08E3-4981-9F0D-56E8D2CB9EFF}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>OptionPricingDomainService</RootNamespace>
+    <AssemblyName>OptionPricingDomainService</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MathNet.Numerics, Version=4.15.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\C-sharp-training\packages\MathNet.Numerics.4.15.0\lib\net461\MathNet.Numerics.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Runtime" />
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=4.0.4.1, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\C-sharp-training\packages\System.Runtime.CompilerServices.Unsafe.4.5.2\lib\netstandard2.0\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Unity.Abstractions, Version=5.11.7.0, Culture=neutral, PublicKeyToken=489b6accfaf20ef0, processorArchitecture=MSIL">
+      <HintPath>..\C-sharp-training\packages\Unity.5.11.10\lib\net47\Unity.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Container, Version=5.11.11.0, Culture=neutral, PublicKeyToken=489b6accfaf20ef0, processorArchitecture=MSIL">
+      <HintPath>..\C-sharp-training\packages\Unity.5.11.10\lib\net47\Unity.Container.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="IOptionPricingMethodService.cs" />
+    <Compile Include="OptionPricingBinomialTreeService.cs" />
+    <Compile Include="OptionPricingBlackScholesService.cs" />
+    <Compile Include="OptionPricingMonteCarloService.cs" />
+    <Compile Include="OptionPricingPersistenceService.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\C-sharp-training\OptionPricingLib.csproj">
+      <Project>{e7f7729a-3026-4905-b685-777f67352052}</Project>
+      <Name>OptionPricingLib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LoggerLog4net\LoggerLog4net.csproj">
+      <Project>{4F8AB2DF-A0E7-4235-805A-6C879DC8CAB1}</Project>
+      <Name>LoggerLog4net</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\OptionPricingDAO\OptionPricingDAO.csproj">
+      <Project>{D7D3C8CA-BC31-4EFF-8EFC-D0303A762967}</Project>
+      <Name>OptionPricingDAO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\OptionPricingDomain\OptionPricingDomain.csproj">
+      <Project>{B7392970-51E4-42B8-9BCE-732BA1927D4E}</Project>
+      <Name>OptionPricingDomain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\OptionPricingInfrastructure\OptionPricingInfrastructure.csproj">
+      <Project>{68AD9108-CCC1-4EC9-B138-578C9124DBEC}</Project>
+      <Name>OptionPricingInfrastructure</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\OptionPricingRepository\OptionPricingRepository.csproj">
+      <Project>{F9C6FBF4-F474-4F38-922E-B888BD569911}</Project>
+      <Name>OptionPricingRepository</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

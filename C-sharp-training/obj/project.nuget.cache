@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "RXxGq5J0VAzEjLy8TZtkQf6a6V2OwPUma6o/okGuMrSnWydrKGeXS8FyDxmMhDihQimv1wg5jy6J/E78aiYE/A==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Sami B\\source\\repos\\C-sharp-training\\OptionPricingLib.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Sami B\\.nuget\\packages\\castle.core\\4.4.0\\castle.core.4.4.0.nupkg.sha512",
+    "C:\\Users\\Sami B\\.nuget\\packages\\mathnet.numerics\\4.15.0\\mathnet.numerics.4.15.0.nupkg.sha512",
+    "C:\\Users\\Sami B\\.nuget\\packages\\nsubstitute\\4.2.2\\nsubstitute.4.2.2.nupkg.sha512",
+    "C:\\Users\\Sami B\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0\\system.componentmodel.annotations.5.0.0.nupkg.sha512",
+    "C:\\Users\\Sami B\\.nuget\\packages\\system.data.sqlclient\\4.8.3\\system.data.sqlclient.4.8.3.nupkg.sha512",
+    "C:\\Users\\Sami B\\.nuget\\packages\\system.threading.tasks.extensions\\4.3.0\\system.threading.tasks.extensions.4.3.0.nupkg.sha512"
+  ],
+  "logs": []
+}

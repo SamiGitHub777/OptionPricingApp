@@ -1,0 +1,148 @@
+ 2021-11-17 15:11:03 – INFO  LoggerLog4net.Log4NetWrapper [1] Option type AmericanCall Strike 300 Risk free rate 0,04 Maturity 27/10/2023 00:00:00 Volatility 0,2 Underlying FR_BNP     Spot 350 Underlying type Stock 
+ stacktrace:C_sharp_training.Program.Main > System.Collections.Generic.List`1.ForEach > C_sharp_training.Program+<>c.<Main>b__1_0 > LoggerLog4net.Log4NetWrapper.Info 
+ 2021-11-17 15:11:03 – INFO  LoggerLog4net.Log4NetWrapper [1] Option type AmericanCall Strike 15000 Risk free rate 0,04 Maturity 04/11/2023 00:00:00 Volatility 0,3 Underlying US_SPX_TEST Spot 16000 Underlying type Index 
+ stacktrace:C_sharp_training.Program.Main > System.Collections.Generic.List`1.ForEach > C_sharp_training.Program+<>c.<Main>b__1_0 > LoggerLog4net.Log4NetWrapper.Info 
+ 2021-11-17 15:11:03 – INFO  LoggerLog4net.Log4NetWrapper [1] Option type AmericanCall Strike 15000 Risk free rate 0,04 Maturity 05/11/2023 00:00:00 Volatility 0,3 Underlying US_SPX_TEST Spot 16000 Underlying type Index 
+ stacktrace:C_sharp_training.Program.Main > System.Collections.Generic.List`1.ForEach > C_sharp_training.Program+<>c.<Main>b__1_0 > LoggerLog4net.Log4NetWrapper.Info 
+ 2021-11-17 15:11:03 – INFO  LoggerLog4net.Log4NetWrapper [1] Option type AmericanCall Strike 15000 Risk free rate 0,04 Maturity 12/11/2023 00:00:00 Volatility 0,3 Underlying DE_DAX_TEST Spot 16000 Underlying type Index 
+ stacktrace:C_sharp_training.Program.Main > System.Collections.Generic.List`1.ForEach > C_sharp_training.Program+<>c.<Main>b__1_0 > LoggerLog4net.Log4NetWrapper.Info 
+ 2021-11-17 15:11:03 – INFO  LoggerLog4net.Log4NetWrapper [1] Option type EuropeanCall Strike 15000 Risk free rate 0,04 Maturity 12/11/2023 00:00:00 Volatility 0,3 Underlying DE_DAX_TEST Spot 16000 Underlying type Index 
+ stacktrace:C_sharp_training.Program.Main > System.Collections.Generic.List`1.ForEach > C_sharp_training.Program+<>c.<Main>b__1_0 > LoggerLog4net.Log4NetWrapper.Info 
+ 2021-11-17 15:11:03 – INFO  LoggerLog4net.Log4NetWrapper [1] Option type EuropeanCall Strike 15000 Risk free rate 0,04 Maturity 12/11/2023 00:00:00 Volatility 0,3 Underlying DE_DAX_TEST Spot 17000 Underlying type Index 
+ stacktrace:C_sharp_training.Program.Main > System.Collections.Generic.List`1.ForEach > C_sharp_training.Program+<>c.<Main>b__1_0 > LoggerLog4net.Log4NetWrapper.Info 
+ 2021-11-17 15:11:03 – INFO  LoggerLog4net.Log4NetWrapper [1] Option type EuropeanCall Strike 15000 Risk free rate 0,04 Maturity 12/11/2023 00:00:00 Volatility 0,3 Underlying DE_DAX_TEST Spot 18000 Underlying type Index 
+ stacktrace:C_sharp_training.Program.Main > System.Collections.Generic.List`1.ForEach > C_sharp_training.Program+<>c.<Main>b__1_0 > LoggerLog4net.Log4NetWrapper.Info 
+ 2021-11-17 15:11:03 – INFO  LoggerLog4net.Log4NetWrapper [1] Option type EuropeanCall Strike 15000 Risk free rate 0,04 Maturity 15/11/2023 00:00:00 Volatility 0,3 Underlying DE_DAX_TEST Spot 19000 Underlying type Index 
+ stacktrace:C_sharp_training.Program.Main > System.Collections.Generic.List`1.ForEach > C_sharp_training.Program+<>c.<Main>b__1_0 > LoggerLog4net.Log4NetWrapper.Info 
+ 2021-11-17 15:11:03 – INFO  LoggerLog4net.Log4NetWrapper [1] Option type EuropeanCall Strike 15000 Risk free rate 0,04 Maturity 15/11/2023 00:00:00 Volatility 0,3 Underlying DE_DAX_TEST Spot 18000 Underlying type Index 
+ stacktrace:C_sharp_training.Program.Main > System.Collections.Generic.List`1.ForEach > C_sharp_training.Program+<>c.<Main>b__1_0 > LoggerLog4net.Log4NetWrapper.Info 
+ 2021-11-17 15:11:03 – INFO  LoggerLog4net.Log4NetWrapper [1] Option type EuropeanCall Strike 1000 Risk free rate 0,04 Maturity 16/11/2023 00:00:00 Volatility 0,3 Underlying DE_DAX_TEXT Spot 1500 Underlying type Index 
+ stacktrace:C_sharp_training.Program.Main > System.Collections.Generic.List`1.ForEach > C_sharp_training.Program+<>c.<Main>b__1_0 > LoggerLog4net.Log4NetWrapper.Info 
+ 2021-11-17 15:11:03 – INFO  LoggerLog4net.Log4NetWrapper [1] Option type EuropeanCall Strike 250 Risk free rate 0,03 Maturity 17/11/2022 00:00:00 Volatility 0,15 Underlying FR_BNP     Spot 300 Underlying type Stock 
+ stacktrace:C_sharp_training.Program.Main > System.Collections.Generic.List`1.ForEach > C_sharp_training.Program+<>c.<Main>b__1_0 > LoggerLog4net.Log4NetWrapper.Info 
+ 2021-11-17 15:11:03 – INFO  LoggerLog4net.Log4NetWrapper [1] Option price is :  
+ stacktrace:C_sharp_training.Program.Main > LoggerLog4net.Log4NetWrapper.Info 
+ 2021-11-17 16:43:53 – INFO  LoggerLog4net.Log4NetWrapper [1] Option type AmericanCall Strike 300 Risk free rate 0,04 Maturity 27/10/2023 00:00:00 Volatility 0,2 Underlying FR_BNP     Spot 350 Underlying type Stock 
+ stacktrace:C_sharp_training.Program.Main > System.Collections.Generic.List`1.ForEach > C_sharp_training.Program+<>c.<Main>b__1_0 > LoggerLog4net.Log4NetWrapper.Info 
+ 2021-11-17 16:43:53 – INFO  LoggerLog4net.Log4NetWrapper [1] Option type AmericanCall Strike 15000 Risk free rate 0,04 Maturity 04/11/2023 00:00:00 Volatility 0,3 Underlying US_SPX_TEST Spot 16000 Underlying type Index 
+ stacktrace:C_sharp_training.Program.Main > System.Collections.Generic.List`1.ForEach > C_sharp_training.Program+<>c.<Main>b__1_0 > LoggerLog4net.Log4NetWrapper.Info 
+ 2021-11-17 16:43:53 – INFO  LoggerLog4net.Log4NetWrapper [1] Option type AmericanCall Strike 15000 Risk free rate 0,04 Maturity 05/11/2023 00:00:00 Volatility 0,3 Underlying US_SPX_TEST Spot 16000 Underlying type Index 
+ stacktrace:C_sharp_training.Program.Main > System.Collections.Generic.List`1.ForEach > C_sharp_training.Program+<>c.<Main>b__1_0 > LoggerLog4net.Log4NetWrapper.Info 
+ 2021-11-17 16:43:53 – INFO  LoggerLog4net.Log4NetWrapper [1] Option type AmericanCall Strike 15000 Risk free rate 0,04 Maturity 12/11/2023 00:00:00 Volatility 0,3 Underlying DE_DAX_TEST Spot 16000 Underlying type Index 
+ stacktrace:C_sharp_training.Program.Main > System.Collections.Generic.List`1.ForEach > C_sharp_training.Program+<>c.<Main>b__1_0 > LoggerLog4net.Log4NetWrapper.Info 
+ 2021-11-17 16:43:53 – INFO  LoggerLog4net.Log4NetWrapper [1] Option type EuropeanCall Strike 15000 Risk free rate 0,04 Maturity 12/11/2023 00:00:00 Volatility 0,3 Underlying DE_DAX_TEST Spot 16000 Underlying type Index 
+ stacktrace:C_sharp_training.Program.Main > System.Collections.Generic.List`1.ForEach > C_sharp_training.Program+<>c.<Main>b__1_0 > LoggerLog4net.Log4NetWrapper.Info 
+ 2021-11-17 16:43:53 – INFO  LoggerLog4net.Log4NetWrapper [1] Option type EuropeanCall Strike 15000 Risk free rate 0,04 Maturity 12/11/2023 00:00:00 Volatility 0,3 Underlying DE_DAX_TEST Spot 17000 Underlying type Index 
+ stacktrace:C_sharp_training.Program.Main > System.Collections.Generic.List`1.ForEach > C_sharp_training.Program+<>c.<Main>b__1_0 > LoggerLog4net.Log4NetWrapper.Info 
+ 2021-11-17 16:43:53 – INFO  LoggerLog4net.Log4NetWrapper [1] Option type EuropeanCall Strike 15000 Risk free rate 0,04 Maturity 12/11/2023 00:00:00 Volatility 0,3 Underlying DE_DAX_TEST Spot 18000 Underlying type Index 
+ stacktrace:C_sharp_training.Program.Main > System.Collections.Generic.List`1.ForEach > C_sharp_training.Program+<>c.<Main>b__1_0 > LoggerLog4net.Log4NetWrapper.Info 
+ 2021-11-17 16:43:53 – INFO  LoggerLog4net.Log4NetWrapper [1] Option type EuropeanCall Strike 15000 Risk free rate 0,04 Maturity 15/11/2023 00:00:00 Volatility 0,3 Underlying DE_DAX_TEST Spot 19000 Underlying type Index 
+ stacktrace:C_sharp_training.Program.Main > System.Collections.Generic.List`1.ForEach > C_sharp_training.Program+<>c.<Main>b__1_0 > LoggerLog4net.Log4NetWrapper.Info 
+ 2021-11-17 16:43:53 – INFO  LoggerLog4net.Log4NetWrapper [1] Option type EuropeanCall Strike 15000 Risk free rate 0,04 Maturity 15/11/2023 00:00:00 Volatility 0,3 Underlying DE_DAX_TEST Spot 18000 Underlying type Index 
+ stacktrace:C_sharp_training.Program.Main > System.Collections.Generic.List`1.ForEach > C_sharp_training.Program+<>c.<Main>b__1_0 > LoggerLog4net.Log4NetWrapper.Info 
+ 2021-11-17 16:43:53 – INFO  LoggerLog4net.Log4NetWrapper [1] Option type EuropeanCall Strike 1000 Risk free rate 0,04 Maturity 16/11/2023 00:00:00 Volatility 0,3 Underlying DE_DAX_TEXT Spot 1500 Underlying type Index 
+ stacktrace:C_sharp_training.Program.Main > System.Collections.Generic.List`1.ForEach > C_sharp_training.Program+<>c.<Main>b__1_0 > LoggerLog4net.Log4NetWrapper.Info 
+ 2021-11-17 16:43:53 – INFO  LoggerLog4net.Log4NetWrapper [1] Option type EuropeanCall Strike 250 Risk free rate 0,03 Maturity 17/11/2022 00:00:00 Volatility 0,15 Underlying FR_BNP     Spot 300 Underlying type Stock 
+ stacktrace:C_sharp_training.Program.Main > System.Collections.Generic.List`1.ForEach > C_sharp_training.Program+<>c.<Main>b__1_0 > LoggerLog4net.Log4NetWrapper.Info 
+ 2021-11-17 16:43:53 – INFO  LoggerLog4net.Log4NetWrapper [1] Option price is :  
+ stacktrace:C_sharp_training.Program.Main > LoggerLog4net.Log4NetWrapper.Info 
+ 2021-11-17 16:54:20 – INFO  LoggerLog4net.Log4NetWrapper [1] Option type AmericanCall Strike 300 Risk free rate 0,04 Maturity 27/10/2023 00:00:00 Volatility 0,2 Underlying FR_BNP     Spot 350 Underlying type Stock 
+ stacktrace:C_sharp_training.Program.Main > System.Collections.Generic.List`1.ForEach > C_sharp_training.Program+<>c.<Main>b__1_0 > LoggerLog4net.Log4NetWrapper.Info 
+ 2021-11-17 16:54:20 – INFO  LoggerLog4net.Log4NetWrapper [1] Option type AmericanCall Strike 15000 Risk free rate 0,04 Maturity 04/11/2023 00:00:00 Volatility 0,3 Underlying US_SPX_TEST Spot 16000 Underlying type Index 
+ stacktrace:C_sharp_training.Program.Main > System.Collections.Generic.List`1.ForEach > C_sharp_training.Program+<>c.<Main>b__1_0 > LoggerLog4net.Log4NetWrapper.Info 
+ 2021-11-17 16:54:20 – INFO  LoggerLog4net.Log4NetWrapper [1] Option type AmericanCall Strike 15000 Risk free rate 0,04 Maturity 05/11/2023 00:00:00 Volatility 0,3 Underlying US_SPX_TEST Spot 16000 Underlying type Index 
+ stacktrace:C_sharp_training.Program.Main > System.Collections.Generic.List`1.ForEach > C_sharp_training.Program+<>c.<Main>b__1_0 > LoggerLog4net.Log4NetWrapper.Info 
+ 2021-11-17 16:54:20 – INFO  LoggerLog4net.Log4NetWrapper [1] Option type AmericanCall Strike 15000 Risk free rate 0,04 Maturity 12/11/2023 00:00:00 Volatility 0,3 Underlying DE_DAX_TEST Spot 16000 Underlying type Index 
+ stacktrace:C_sharp_training.Program.Main > System.Collections.Generic.List`1.ForEach > C_sharp_training.Program+<>c.<Main>b__1_0 > LoggerLog4net.Log4NetWrapper.Info 
+ 2021-11-17 16:54:20 – INFO  LoggerLog4net.Log4NetWrapper [1] Option type EuropeanCall Strike 15000 Risk free rate 0,04 Maturity 12/11/2023 00:00:00 Volatility 0,3 Underlying DE_DAX_TEST Spot 16000 Underlying type Index 
+ stacktrace:C_sharp_training.Program.Main > System.Collections.Generic.List`1.ForEach > C_sharp_training.Program+<>c.<Main>b__1_0 > LoggerLog4net.Log4NetWrapper.Info 
+ 2021-11-17 16:54:20 – INFO  LoggerLog4net.Log4NetWrapper [1] Option type EuropeanCall Strike 15000 Risk free rate 0,04 Maturity 12/11/2023 00:00:00 Volatility 0,3 Underlying DE_DAX_TEST Spot 17000 Underlying type Index 
+ stacktrace:C_sharp_training.Program.Main > System.Collections.Generic.List`1.ForEach > C_sharp_training.Program+<>c.<Main>b__1_0 > LoggerLog4net.Log4NetWrapper.Info 
+ 2021-11-17 16:54:20 – INFO  LoggerLog4net.Log4NetWrapper [1] Option type EuropeanCall Strike 15000 Risk free rate 0,04 Maturity 12/11/2023 00:00:00 Volatility 0,3 Underlying DE_DAX_TEST Spot 18000 Underlying type Index 
+ stacktrace:C_sharp_training.Program.Main > System.Collections.Generic.List`1.ForEach > C_sharp_training.Program+<>c.<Main>b__1_0 > LoggerLog4net.Log4NetWrapper.Info 
+ 2021-11-17 16:54:20 – INFO  LoggerLog4net.Log4NetWrapper [1] Option type EuropeanCall Strike 15000 Risk free rate 0,04 Maturity 15/11/2023 00:00:00 Volatility 0,3 Underlying DE_DAX_TEST Spot 19000 Underlying type Index 
+ stacktrace:C_sharp_training.Program.Main > System.Collections.Generic.List`1.ForEach > C_sharp_training.Program+<>c.<Main>b__1_0 > LoggerLog4net.Log4NetWrapper.Info 
+ 2021-11-17 16:54:20 – INFO  LoggerLog4net.Log4NetWrapper [1] Option type EuropeanCall Strike 15000 Risk free rate 0,04 Maturity 15/11/2023 00:00:00 Volatility 0,3 Underlying DE_DAX_TEST Spot 18000 Underlying type Index 
+ stacktrace:C_sharp_training.Program.Main > System.Collections.Generic.List`1.ForEach > C_sharp_training.Program+<>c.<Main>b__1_0 > LoggerLog4net.Log4NetWrapper.Info 
+ 2021-11-17 16:54:20 – INFO  LoggerLog4net.Log4NetWrapper [1] Option type EuropeanCall Strike 1000 Risk free rate 0,04 Maturity 16/11/2023 00:00:00 Volatility 0,3 Underlying DE_DAX_TEXT Spot 1500 Underlying type Index 
+ stacktrace:C_sharp_training.Program.Main > System.Collections.Generic.List`1.ForEach > C_sharp_training.Program+<>c.<Main>b__1_0 > LoggerLog4net.Log4NetWrapper.Info 
+ 2021-11-17 16:54:20 – INFO  LoggerLog4net.Log4NetWrapper [1] Option type EuropeanCall Strike 250 Risk free rate 0,03 Maturity 17/11/2022 00:00:00 Volatility 0,15 Underlying FR_BNP     Spot 300 Underlying type Stock 
+ stacktrace:C_sharp_training.Program.Main > System.Collections.Generic.List`1.ForEach > C_sharp_training.Program+<>c.<Main>b__1_0 > LoggerLog4net.Log4NetWrapper.Info 
+ 2021-11-17 16:54:20 – INFO  LoggerLog4net.Log4NetWrapper [1] Option price is :  
+ stacktrace:C_sharp_training.Program.Main > LoggerLog4net.Log4NetWrapper.Info 
+ 2021-11-17 17:40:20 – INFO  LoggerLog4net.Log4NetWrapper [1] Option type AmericanCall Strike 300 Risk free rate 0,04 Maturity 27/10/2023 00:00:00 Volatility 0,2 Underlying FR_BNP     Spot 350 Underlying type Stock 
+ stacktrace:C_sharp_training.Program.Main > System.Collections.Generic.List`1.ForEach > C_sharp_training.Program+<>c.<Main>b__1_0 > LoggerLog4net.Log4NetWrapper.Info 
+ 2021-11-17 17:40:20 – INFO  LoggerLog4net.Log4NetWrapper [1] Option type AmericanCall Strike 15000 Risk free rate 0,04 Maturity 04/11/2023 00:00:00 Volatility 0,3 Underlying US_SPX_TEST Spot 16000 Underlying type Index 
+ stacktrace:C_sharp_training.Program.Main > System.Collections.Generic.List`1.ForEach > C_sharp_training.Program+<>c.<Main>b__1_0 > LoggerLog4net.Log4NetWrapper.Info 
+ 2021-11-17 17:40:20 – INFO  LoggerLog4net.Log4NetWrapper [1] Option type AmericanCall Strike 15000 Risk free rate 0,04 Maturity 05/11/2023 00:00:00 Volatility 0,3 Underlying US_SPX_TEST Spot 16000 Underlying type Index 
+ stacktrace:C_sharp_training.Program.Main > System.Collections.Generic.List`1.ForEach > C_sharp_training.Program+<>c.<Main>b__1_0 > LoggerLog4net.Log4NetWrapper.Info 
+ 2021-11-17 17:40:20 – INFO  LoggerLog4net.Log4NetWrapper [1] Option type AmericanCall Strike 15000 Risk free rate 0,04 Maturity 12/11/2023 00:00:00 Volatility 0,3 Underlying DE_DAX_TEST Spot 16000 Underlying type Index 
+ stacktrace:C_sharp_training.Program.Main > System.Collections.Generic.List`1.ForEach > C_sharp_training.Program+<>c.<Main>b__1_0 > LoggerLog4net.Log4NetWrapper.Info 
+ 2021-11-17 17:40:20 – INFO  LoggerLog4net.Log4NetWrapper [1] Option type EuropeanCall Strike 15000 Risk free rate 0,04 Maturity 12/11/2023 00:00:00 Volatility 0,3 Underlying DE_DAX_TEST Spot 16000 Underlying type Index 
+ stacktrace:C_sharp_training.Program.Main > System.Collections.Generic.List`1.ForEach > C_sharp_training.Program+<>c.<Main>b__1_0 > LoggerLog4net.Log4NetWrapper.Info 
+ 2021-11-17 17:40:20 – INFO  LoggerLog4net.Log4NetWrapper [1] Option type EuropeanCall Strike 15000 Risk free rate 0,04 Maturity 12/11/2023 00:00:00 Volatility 0,3 Underlying DE_DAX_TEST Spot 17000 Underlying type Index 
+ stacktrace:C_sharp_training.Program.Main > System.Collections.Generic.List`1.ForEach > C_sharp_training.Program+<>c.<Main>b__1_0 > LoggerLog4net.Log4NetWrapper.Info 
+ 2021-11-17 17:40:20 – INFO  LoggerLog4net.Log4NetWrapper [1] Option type EuropeanCall Strike 15000 Risk free rate 0,04 Maturity 12/11/2023 00:00:00 Volatility 0,3 Underlying DE_DAX_TEST Spot 18000 Underlying type Index 
+ stacktrace:C_sharp_training.Program.Main > System.Collections.Generic.List`1.ForEach > C_sharp_training.Program+<>c.<Main>b__1_0 > LoggerLog4net.Log4NetWrapper.Info 
+ 2021-11-17 17:40:20 – INFO  LoggerLog4net.Log4NetWrapper [1] Option type EuropeanCall Strike 15000 Risk free rate 0,04 Maturity 15/11/2023 00:00:00 Volatility 0,3 Underlying DE_DAX_TEST Spot 19000 Underlying type Index 
+ stacktrace:C_sharp_training.Program.Main > System.Collections.Generic.List`1.ForEach > C_sharp_training.Program+<>c.<Main>b__1_0 > LoggerLog4net.Log4NetWrapper.Info 
+ 2021-11-17 17:40:20 – INFO  LoggerLog4net.Log4NetWrapper [1] Option type EuropeanCall Strike 15000 Risk free rate 0,04 Maturity 15/11/2023 00:00:00 Volatility 0,3 Underlying DE_DAX_TEST Spot 18000 Underlying type Index 
+ stacktrace:C_sharp_training.Program.Main > System.Collections.Generic.List`1.ForEach > C_sharp_training.Program+<>c.<Main>b__1_0 > LoggerLog4net.Log4NetWrapper.Info 
+ 2021-11-17 17:40:20 – INFO  LoggerLog4net.Log4NetWrapper [1] Option type EuropeanCall Strike 1000 Risk free rate 0,04 Maturity 16/11/2023 00:00:00 Volatility 0,3 Underlying DE_DAX_TEXT Spot 1500 Underlying type Index 
+ stacktrace:C_sharp_training.Program.Main > System.Collections.Generic.List`1.ForEach > C_sharp_training.Program+<>c.<Main>b__1_0 > LoggerLog4net.Log4NetWrapper.Info 
+ 2021-11-17 17:40:20 – INFO  LoggerLog4net.Log4NetWrapper [1] Option type EuropeanCall Strike 250 Risk free rate 0,03 Maturity 17/11/2022 00:00:00 Volatility 0,15 Underlying FR_BNP     Spot 300 Underlying type Stock 
+ stacktrace:C_sharp_training.Program.Main > System.Collections.Generic.List`1.ForEach > C_sharp_training.Program+<>c.<Main>b__1_0 > LoggerLog4net.Log4NetWrapper.Info 
+ 2021-11-17 17:40:20 – INFO  LoggerLog4net.Log4NetWrapper [1] Option price is :  
+ stacktrace:C_sharp_training.Program.Main > LoggerLog4net.Log4NetWrapper.Info 
+ 2021-11-18 10:58:09 – INFO  LoggerLog4net.Log4NetWrapper [1] Option type AmericanCall Strike 300 Risk free rate 0,04 Maturity 27/10/2023 00:00:00 Volatility 0,2 Underlying FR_BNP     Spot 350 Underlying type Stock 
+ stacktrace:C_sharp_training.Program.Main > System.Collections.Generic.List`1.ForEach > C_sharp_training.Program+<>c.<Main>b__1_0 > LoggerLog4net.Log4NetWrapper.Info 
+ 2021-11-18 10:58:09 – INFO  LoggerLog4net.Log4NetWrapper [1] Option type AmericanCall Strike 15000 Risk free rate 0,04 Maturity 04/11/2023 00:00:00 Volatility 0,3 Underlying US_SPX_TEST Spot 16000 Underlying type Index 
+ stacktrace:C_sharp_training.Program.Main > System.Collections.Generic.List`1.ForEach > C_sharp_training.Program+<>c.<Main>b__1_0 > LoggerLog4net.Log4NetWrapper.Info 
+ 2021-11-18 10:58:09 – INFO  LoggerLog4net.Log4NetWrapper [1] Option type AmericanCall Strike 15000 Risk free rate 0,04 Maturity 05/11/2023 00:00:00 Volatility 0,3 Underlying US_SPX_TEST Spot 16000 Underlying type Index 
+ stacktrace:C_sharp_training.Program.Main > System.Collections.Generic.List`1.ForEach > C_sharp_training.Program+<>c.<Main>b__1_0 > LoggerLog4net.Log4NetWrapper.Info 
+ 2021-11-18 10:58:09 – INFO  LoggerLog4net.Log4NetWrapper [1] Option type AmericanCall Strike 15000 Risk free rate 0,04 Maturity 12/11/2023 00:00:00 Volatility 0,3 Underlying DE_DAX_TEST Spot 16000 Underlying type Index 
+ stacktrace:C_sharp_training.Program.Main > System.Collections.Generic.List`1.ForEach > C_sharp_training.Program+<>c.<Main>b__1_0 > LoggerLog4net.Log4NetWrapper.Info 
+ 2021-11-18 10:58:09 – INFO  LoggerLog4net.Log4NetWrapper [1] Option type EuropeanCall Strike 15000 Risk free rate 0,04 Maturity 12/11/2023 00:00:00 Volatility 0,3 Underlying DE_DAX_TEST Spot 16000 Underlying type Index 
+ stacktrace:C_sharp_training.Program.Main > System.Collections.Generic.List`1.ForEach > C_sharp_training.Program+<>c.<Main>b__1_0 > LoggerLog4net.Log4NetWrapper.Info 
+ 2021-11-18 10:58:09 – INFO  LoggerLog4net.Log4NetWrapper [1] Option type EuropeanCall Strike 15000 Risk free rate 0,04 Maturity 12/11/2023 00:00:00 Volatility 0,3 Underlying DE_DAX_TEST Spot 17000 Underlying type Index 
+ stacktrace:C_sharp_training.Program.Main > System.Collections.Generic.List`1.ForEach > C_sharp_training.Program+<>c.<Main>b__1_0 > LoggerLog4net.Log4NetWrapper.Info 
+ 2021-11-18 10:58:09 – INFO  LoggerLog4net.Log4NetWrapper [1] Option type EuropeanCall Strike 15000 Risk free rate 0,04 Maturity 12/11/2023 00:00:00 Volatility 0,3 Underlying DE_DAX_TEST Spot 18000 Underlying type Index 
+ stacktrace:C_sharp_training.Program.Main > System.Collections.Generic.List`1.ForEach > C_sharp_training.Program+<>c.<Main>b__1_0 > LoggerLog4net.Log4NetWrapper.Info 
+ 2021-11-18 10:58:09 – INFO  LoggerLog4net.Log4NetWrapper [1] Option type EuropeanCall Strike 15000 Risk free rate 0,04 Maturity 15/11/2023 00:00:00 Volatility 0,3 Underlying DE_DAX_TEST Spot 19000 Underlying type Index 
+ stacktrace:C_sharp_training.Program.Main > System.Collections.Generic.List`1.ForEach > C_sharp_training.Program+<>c.<Main>b__1_0 > LoggerLog4net.Log4NetWrapper.Info 
+ 2021-11-18 10:58:09 – INFO  LoggerLog4net.Log4NetWrapper [1] Option type EuropeanCall Strike 15000 Risk free rate 0,04 Maturity 15/11/2023 00:00:00 Volatility 0,3 Underlying DE_DAX_TEST Spot 18000 Underlying type Index 
+ stacktrace:C_sharp_training.Program.Main > System.Collections.Generic.List`1.ForEach > C_sharp_training.Program+<>c.<Main>b__1_0 > LoggerLog4net.Log4NetWrapper.Info 
+ 2021-11-18 10:58:09 – INFO  LoggerLog4net.Log4NetWrapper [1] Option type EuropeanCall Strike 1000 Risk free rate 0,04 Maturity 16/11/2023 00:00:00 Volatility 0,3 Underlying DE_DAX_TEXT Spot 1500 Underlying type Index 
+ stacktrace:C_sharp_training.Program.Main > System.Collections.Generic.List`1.ForEach > C_sharp_training.Program+<>c.<Main>b__1_0 > LoggerLog4net.Log4NetWrapper.Info 
+ 2021-11-18 10:58:09 – INFO  LoggerLog4net.Log4NetWrapper [1] Option type EuropeanCall Strike 250 Risk free rate 0,03 Maturity 17/11/2022 00:00:00 Volatility 0,15 Underlying FR_BNP     Spot 300 Underlying type Stock 
+ stacktrace:C_sharp_training.Program.Main > System.Collections.Generic.List`1.ForEach > C_sharp_training.Program+<>c.<Main>b__1_0 > LoggerLog4net.Log4NetWrapper.Info 
+ 2021-11-18 10:58:09 – INFO  LoggerLog4net.Log4NetWrapper [1] Option type EuropeanCall Strike 250 Risk free rate 0,03 Maturity 18/11/2022 00:00:00 Volatility 0,15 Underlying FR_BNP     Spot 300 Underlying type Stock 
+ stacktrace:C_sharp_training.Program.Main > System.Collections.Generic.List`1.ForEach > C_sharp_training.Program+<>c.<Main>b__1_0 > LoggerLog4net.Log4NetWrapper.Info 
+ 2021-11-18 10:58:09 – INFO  LoggerLog4net.Log4NetWrapper [1] Option price is :  
+ stacktrace:C_sharp_training.Program.Main > LoggerLog4net.Log4NetWrapper.Info 
+ 2021-11-18 11:19:29 – INFO  LoggerLog4net.Log4NetWrapper [1] Option type AmericanCall Strike 300 Risk free rate 0,04 Maturity 27/10/2023 00:00:00 Volatility 0,2 Underlying FR_BNP     Spot 350 Underlying type Stock 
+ stacktrace:C_sharp_training.Program.Main > System.Collections.Generic.List`1.ForEach > C_sharp_training.Program+<>c.<Main>b__1_0 > LoggerLog4net.Log4NetWrapper.Info 
+ 2021-11-18 11:19:29 – INFO  LoggerLog4net.Log4NetWrapper [1] Option type AmericanCall Strike 15000 Risk free rate 0,04 Maturity 04/11/2023 00:00:00 Volatility 0,3 Underlying US_SPX_TEST Spot 16000 Underlying type Index 
+ stacktrace:C_sharp_training.Program.Main > System.Collections.Generic.List`1.ForEach > C_sharp_training.Program+<>c.<Main>b__1_0 > LoggerLog4net.Log4NetWrapper.Info 
+ 2021-11-18 11:19:29 – INFO  LoggerLog4net.Log4NetWrapper [1] Option type AmericanCall Strike 15000 Risk free rate 0,04 Maturity 05/11/2023 00:00:00 Volatility 0,3 Underlying US_SPX_TEST Spot 16000 Underlying type Index 
+ stacktrace:C_sharp_training.Program.Main > System.Collections.Generic.List`1.ForEach > C_sharp_training.Program+<>c.<Main>b__1_0 > LoggerLog4net.Log4NetWrapper.Info 
+ 2021-11-18 11:19:29 – INFO  LoggerLog4net.Log4NetWrapper [1] Option type AmericanCall Strike 15000 Risk free rate 0,04 Maturity 12/11/2023 00:00:00 Volatility 0,3 Underlying DE_DAX_TEST Spot 16000 Underlying type Index 
+ stacktrace:C_sharp_training.Program.Main > System.Collections.Generic.List`1.ForEach > C_sharp_training.Program+<>c.<Main>b__1_0 > LoggerLog4net.Log4NetWrapper.Info 
+ 2021-11-18 11:19:29 – INFO  LoggerLog4net.Log4NetWrapper [1] Option type EuropeanCall Strike 15000 Risk free rate 0,04 Maturity 12/11/2023 00:00:00 Volatility 0,3 Underlying DE_DAX_TEST Spot 16000 Underlying type Index 
+ stacktrace:C_sharp_training.Program.Main > System.Collections.Generic.List`1.ForEach > C_sharp_training.Program+<>c.<Main>b__1_0 > LoggerLog4net.Log4NetWrapper.Info 
+ 2021-11-18 11:19:29 – INFO  LoggerLog4net.Log4NetWrapper [1] Option type EuropeanCall Strike 15000 Risk free rate 0,04 Maturity 12/11/2023 00:00:00 Volatility 0,3 Underlying DE_DAX_TEST Spot 17000 Underlying type Index 
+ stacktrace:C_sharp_training.Program.Main > System.Collections.Generic.List`1.ForEach > C_sharp_training.Program+<>c.<Main>b__1_0 > LoggerLog4net.Log4NetWrapper.Info 
+ 2021-11-18 11:19:29 – INFO  LoggerLog4net.Log4NetWrapper [1] Option type EuropeanCall Strike 15000 Risk free rate 0,04 Maturity 12/11/2023 00:00:00 Volatility 0,3 Underlying DE_DAX_TEST Spot 18000 Underlying type Index 
+ stacktrace:C_sharp_training.Program.Main > System.Collections.Generic.List`1.ForEach > C_sharp_training.Program+<>c.<Main>b__1_0 > LoggerLog4net.Log4NetWrapper.Info 
+ 2021-11-18 11:19:29 – INFO  LoggerLog4net.Log4NetWrapper [1] Option type EuropeanCall Strike 15000 Risk free rate 0,04 Maturity 15/11/2023 00:00:00 Volatility 0,3 Underlying DE_DAX_TEST Spot 19000 Underlying type Index 
+ stacktrace:C_sharp_training.Program.Main > System.Collections.Generic.List`1.ForEach > C_sharp_training.Program+<>c.<Main>b__1_0 > LoggerLog4net.Log4NetWrapper.Info 
+ 2021-11-18 11:19:29 – INFO  LoggerLog4net.Log4NetWrapper [1] Option type EuropeanCall Strike 15000 Risk free rate 0,04 Maturity 15/11/2023 00:00:00 Volatility 0,3 Underlying DE_DAX_TEST Spot 18000 Underlying type Index 
+ stacktrace:C_sharp_training.Program.Main > System.Collections.Generic.List`1.ForEach > C_sharp_training.Program+<>c.<Main>b__1_0 > LoggerLog4net.Log4NetWrapper.Info 
+ 2021-11-18 11:19:29 – INFO  LoggerLog4net.Log4NetWrapper [1] Option type EuropeanCall Strike 1000 Risk free rate 0,04 Maturity 16/11/2023 00:00:00 Volatility 0,3 Underlying DE_DAX_TEXT Spot 1500 Underlying type Index 
+ stacktrace:C_sharp_training.Program.Main > System.Collections.Generic.List`1.ForEach > C_sharp_training.Program+<>c.<Main>b__1_0 > LoggerLog4net.Log4NetWrapper.Info 
+ 2021-11-18 11:19:29 – INFO  LoggerLog4net.Log4NetWrapper [1] Option type EuropeanCall Strike 250 Risk free rate 0,03 Maturity 17/11/2022 00:00:00 Volatility 0,15 Underlying FR_BNP     Spot 300 Underlying type Stock 
+ stacktrace:C_sharp_training.Program.Main > System.Collections.Generic.List`1.ForEach > C_sharp_training.Program+<>c.<Main>b__1_0 > LoggerLog4net.Log4NetWrapper.Info 
+ 2021-11-18 11:19:29 – INFO  LoggerLog4net.Log4NetWrapper [1] Option type EuropeanCall Strike 250 Risk free rate 0,03 Maturity 18/11/2022 00:00:00 Volatility 0,15 Underlying FR_BNP     Spot 300 Underlying type Stock 
+ stacktrace:C_sharp_training.Program.Main > System.Collections.Generic.List`1.ForEach > C_sharp_training.Program+<>c.<Main>b__1_0 > LoggerLog4net.Log4NetWrapper.Info 
+ 2021-11-18 11:19:29 – INFO  LoggerLog4net.Log4NetWrapper [1] Option price is :  
+ stacktrace:C_sharp_training.Program.Main > LoggerLog4net.Log4NetWrapper.Info 

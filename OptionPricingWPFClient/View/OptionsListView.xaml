@@ -1,0 +1,66 @@
+﻿<UserControl x:Class="OptionPricingWPFClient.View.OptionsListView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:OptionPricingWPFClient.View"
+             xmlns:viewModel="clr-namespace:OptionPricingWPFClient.ViewModel"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800"
+             Background="#0F0F2D">
+
+
+    <UserControl.Resources>
+        <Style x:Key="HeaderStyle" TargetType="TextBlock">
+            <Setter Property="Foreground" Value="#FE6584" />
+            <Setter Property="FontSize" Value="24" />
+        </Style>
+  
+    </UserControl.Resources>
+
+    <ScrollViewer VerticalScrollBarVisibility="Auto" Background="Transparent">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="50" />
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+            </Grid.RowDefinitions>
+            
+            <TextBlock Style="{StaticResource HeaderStyle}"
+                                Grid.Row="0"
+                                Text="All options" 
+                                Margin="10 0 0 0"/>
+
+            <ListView Margin="10 10 0 0" PreviewMouseWheel="HandlePreviewMouseWheel" Grid.Row="4" Height="auto" Name="listView1" Width="auto" ItemsSource="{Binding  ItemsCollection}" Foreground="#FE6584" Background="#0F0F2D" >
+
+                <ListView.View>
+                    <GridView>
+                        <GridViewColumn Width="Auto" Header="Option Type" DisplayMemberBinding="{Binding OptionType}"/>
+                        <GridViewColumn Width="Auto" Header="Maturity" DisplayMemberBinding="{Binding Maturity}"/>
+                        <GridViewColumn Width="Auto" Header="Risk Free Rate" DisplayMemberBinding="{Binding RiskFreeRate}"/>
+                        <GridViewColumn Width="Auto" Header="Underlying Name" DisplayMemberBinding="{Binding UnderlyingObj.UnderlyingName}"/>
+                        <GridViewColumn Width="Auto" Header="Underlying Type" DisplayMemberBinding="{Binding UnderlyingObj.UnderlyingType}"/>
+                        <GridViewColumn Width="Auto" Header="Underlying Spot" DisplayMemberBinding="{Binding UnderlyingObj.Spot}"/>
+                        <GridViewColumn Width="Auto" Header="Underlying Volatility" DisplayMemberBinding="{Binding UnderlyingObj.Volatility}"/>
+                    </GridView>
+                    
+                </ListView.View>
+                
+            </ListView>
+
+            <StackPanel
+                                Grid.Row="1"
+                                Margin="10 0 0 0"
+                                Orientation="Horizontal">
+                <Button 
+                                    Command="{Binding RefreshCommand}"
+                                    Content="Refresh" 
+                                    Background="#FE6584"
+                                    Foreground="White"/>
+            </StackPanel>
+        </Grid>
+    </ScrollViewer>
+
+</UserControl>
