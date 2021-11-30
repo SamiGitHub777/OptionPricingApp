@@ -90,6 +90,7 @@
                                     Background="#383660"
                                     Width="100" 
                                     Height="20"
+                                    BorderBrush="#FE6584"
                                     Text="{Binding Strike, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay, StringFormat=N2}" />
             <TextBlock Foreground="#FE6584"
                                     Grid.Row="0"
@@ -103,6 +104,7 @@
                                     Background="#383660"
                                     Width="100" 
                                     Height="20"
+                                    BorderBrush="#FE6584"
                                     Text="{Binding RiskFreeRate, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay, StringFormat=N2}" />
 
         </Grid>
@@ -129,6 +131,7 @@
                                     Grid.Column="0"
                                     Margin="0 5 0 0"
                                     Background="#383660"
+                                    BorderBrush="#FE6584"
                                     Text="{Binding UnderlyingName, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}" />
 
             <TextBlock Foreground="#FE6584"
@@ -156,6 +159,7 @@
                                     Margin="10,6,10,0"
                                     Background="#383660"
                                     Width="90" 
+                                    BorderBrush="#FE6584"
                                     Text="{Binding UnderlyingSpot, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay, StringFormat=N2}" />
             <TextBlock Foreground="#FE6584"
                                     Grid.Row="0"
@@ -168,6 +172,7 @@
                                     Margin="10,6,10,-1"
                                     Width="50" 
                                     Background="#383660"
+                                    BorderBrush="#FE6584"
                                     Text="{Binding UnderlyingVol, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay, StringFormat=N2}" />
         </Grid>
 
@@ -191,6 +196,7 @@
                                     Grid.Column="0"
                                     Margin="0 5 0 0"
                                     Background="#383660"
+                                    BorderBrush="#FE6584"
                                     SelectedDate="{Binding Maturity, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay, TargetNullValue={x:Static sys:DateTime.Now}}" />
         </Grid>
 
@@ -231,7 +237,8 @@
                                     Grid.Row="1"
                                     Width="60"
                                     Background="#383660"
-                HorizontalAlignment="Left"
+                                    HorizontalAlignment="Left"
+                                    BorderBrush="#FE6584"
                                     Text="{Binding Price, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay, StringFormat=N2}" />
         </Grid>
 
