@@ -1,3 +1,4 @@
+C:\Users\Sami B\source\repos\OptionPricingWPFClient\bin\Debug\log4net.config
 C:\Users\Sami B\source\repos\OptionPricingWPFClient\bin\Debug\OptionPricingWPFClient.exe.config
 C:\Users\Sami B\source\repos\OptionPricingWPFClient\bin\Debug\OptionPricingWPFClient.exe
 C:\Users\Sami B\source\repos\OptionPricingWPFClient\bin\Debug\OptionPricingWPFClient.pdb

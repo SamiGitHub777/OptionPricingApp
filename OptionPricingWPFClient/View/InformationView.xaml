@@ -30,6 +30,8 @@
                 <RowDefinition Height="*" />
                 <RowDefinition Height="*" />
                 <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
             </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*"/>
@@ -63,6 +65,20 @@
             <Viewbox Grid.Column="1" Grid.Row="6" Stretch="Uniform">
 
                 <TextBlock HorizontalAlignment="Center" Foreground="#383660" Text="{x:Static viewModel:InformationViewModel.AppVersion}" Grid.Row="6"  />
+            </Viewbox>
+
+
+            <Viewbox Grid.Column="1" Grid.Row="7" Stretch="Uniform">
+
+                <TextBlock HorizontalAlignment="Center" Foreground="#FE6584" Text="GitHub" Grid.Row="5" />
+            </Viewbox>
+
+            <Viewbox Grid.Column="1" Grid.Row="8" Stretch="Uniform">
+                <TextBlock>
+                    <Hyperlink Command="{Binding AccessGitHub}" CommandParameter="{Binding}">
+                    <TextBlock Text="DIGISTRAT-Team/OptionPricingApp"/>
+                    </Hyperlink>
+                </TextBlock>
             </Viewbox>
         </Grid>
     </Grid>
