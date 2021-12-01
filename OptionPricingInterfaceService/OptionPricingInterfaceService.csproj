@@ -84,6 +84,11 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="NetMQServer.cs" />
+    <Compile Include="RequestHandlers\GetAllOptionsRequestHandler.cs" />
+    <Compile Include="RequestHandlers\GetAllPricesRequestHandler.cs" />
+    <Compile Include="RequestHandlers\IOptionPricingJsonSerializer.cs" />
+    <Compile Include="RequestHandlers\IRequestHandler.cs" />
+    <Compile Include="RequestHandlers\PriceOptionRequestHandler.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

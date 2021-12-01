@@ -2,6 +2,7 @@
 using OptionPricingDomain;
 using OptionPricingDomainService;
 using OptionPricingInfrastructure;
+using OptionPricingInterfaceService.RequestHandlers;
 using OptionPricingRepository;
 using System.Collections.Generic;
 
@@ -26,6 +27,9 @@ namespace OptionPricingInterfaceService
             DependencyInjectionManager.RegisterTypeWithKey<IOptionPricingMethodService, OptionPricingBinomialTreeService>(PricingModelEnum.BinomialTree.ToString());
             DependencyInjectionManager.RegisterTypeWithKey<IOptionPricingMethodService, OptionPricingBlackScholesService>(PricingModelEnum.BlackScholes.ToString());
             DependencyInjectionManager.RegisterTypeWithKey<IOptionPricingMethodService, OptionPricingMonteCarloService>(PricingModelEnum.MonteCarlo.ToString());
+            DependencyInjectionManager.RegisterTypeWithKey<IRequestHandler, PriceOptionRequestHandler>(RequestType.PriceOption.ToString());
+            DependencyInjectionManager.RegisterTypeWithKey<IRequestHandler, GetAllOptionsRequestHandler>(RequestType.GetAllOptions.ToString());
+            DependencyInjectionManager.RegisterTypeWithKey<IRequestHandler, GetAllPricesRequestHandler>(RequestType.GetAllPrices.ToString());
         }
     }
 }

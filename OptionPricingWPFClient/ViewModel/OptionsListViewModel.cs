@@ -41,7 +41,6 @@ namespace OptionPricingWPFClient.ViewModel
 
         }
 
-
         public void OnClickRefreshCommand()
         {
             UpdateSectionsList(optionPricingModel.GetAllOptions());

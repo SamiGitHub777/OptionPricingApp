@@ -1,10 +1,6 @@
 ﻿using GalaSoft.MvvmLight.Command;
 using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Reflection;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Input;
 
 namespace OptionPricingWPFClient.ViewModel
@@ -14,19 +10,23 @@ namespace OptionPricingWPFClient.ViewModel
         public static string AppVersion = $"{Assembly.GetExecutingAssembly().GetName().Version.ToString(3)}";
         public static string Title = "Option Pricing App";
         public static string Author = "Sami";
-        public static string GitHubUrl = "https://github.com/DIGISTRAT-Team/OptionPricingApp";
-
-        public ICommand AccessGitHub { get; set; }
+      
+        public ICommand OpenHttpLinkCommand { get; }
 
         public InformationViewModel()
         {
-            this.AccessGitHub = new RelayCommand(OnClickAccessGitHubCommand);
-
+            this.OpenHttpLinkCommand = new RelayCommand<object>(OnOpenHttpLinkCommand);
         }
-
-        private void OnClickAccessGitHubCommand()
+        private void OnOpenHttpLinkCommand(object url)
         {
-            System.Diagnostics.Process.Start(GitHubUrl);
+            try
+            {
+                System.Diagnostics.Process.Start(url as string);
+            }
+            catch (Exception)
+            {
+                // TODO: Error.
+            }
         }
     }
 }

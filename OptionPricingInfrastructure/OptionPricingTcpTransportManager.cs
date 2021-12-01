@@ -47,6 +47,7 @@ namespace OptionPricingInfrastructure
             {
                 var message = new NetMQMessage();
                 message.Append(RequestType.GetAllOptions.ToString());
+                message.Append(NetMQFrame.Empty);
                 logger.Debug($"Sending serialized GetAllOption request");
                 requestSocket.SendMultipartMessage(message);
                 var response = requestSocket.ReceiveFrameString();
@@ -62,6 +63,7 @@ namespace OptionPricingInfrastructure
             {
                 var message = new NetMQMessage();
                 message.Append(RequestType.GetAllPrices.ToString());
+                message.Append(NetMQFrame.Empty);
                 logger.Debug($"Sending serialized GetAllPrices request");
                 requestSocket.SendMultipartMessage(message);
                 var response = requestSocket.ReceiveFrameString();

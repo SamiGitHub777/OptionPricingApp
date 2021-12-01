@@ -1,4 +1,4 @@
-C:\Users\Sami B\source\repos\OptionPricingWPFClient\bin\Debug\log4net.config
+C:\Users\Sami B\source\repos\OptionPricingWPFClient\bin\Debug\MaterialDesignThemes.Wpf.dll
 C:\Users\Sami B\source\repos\OptionPricingWPFClient\bin\Debug\OptionPricingWPFClient.exe.config
 C:\Users\Sami B\source\repos\OptionPricingWPFClient\bin\Debug\OptionPricingWPFClient.exe
 C:\Users\Sami B\source\repos\OptionPricingWPFClient\bin\Debug\OptionPricingWPFClient.pdb
@@ -43,7 +43,6 @@ C:\Users\Sami B\source\repos\OptionPricingWPFClient\bin\Debug\MahApps.Metro.Icon
 C:\Users\Sami B\source\repos\OptionPricingWPFClient\bin\Debug\MahApps.Metro.IconPacks.Zondicons.dll
 C:\Users\Sami B\source\repos\OptionPricingWPFClient\bin\Debug\MaterialDesignColors.dll
 C:\Users\Sami B\source\repos\OptionPricingWPFClient\bin\Debug\MaterialDesignThemes.MahApps.dll
-C:\Users\Sami B\source\repos\OptionPricingWPFClient\bin\Debug\MaterialDesignThemes.Wpf.dll
 C:\Users\Sami B\source\repos\OptionPricingWPFClient\bin\Debug\Microsoft.Xaml.Behaviors.dll
 C:\Users\Sami B\source\repos\OptionPricingWPFClient\bin\Debug\OptionPricingDomain.dll
 C:\Users\Sami B\source\repos\OptionPricingWPFClient\bin\Debug\OptionPricingInfrastructure.dll

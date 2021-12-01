@@ -7,6 +7,7 @@ using System;
 using System.Threading;
 using LoggerLog4net;
 using System.Collections.Generic;
+using OptionPricingInterfaceService.RequestHandlers;
 
 namespace OptionPricingInterfaceService
 {
@@ -54,30 +55,22 @@ namespace OptionPricingInterfaceService
                         {
                             var optionPricingInterfaceServiceRegistration = new OptionPricingInterfaceServiceRegistration();
                             optionPricingInterfaceServiceRegistration.Register();
-                            IOptionPricingJsonSerializer<Price> serializerPrice = optionPricingInterfaceServiceRegistration.DependencyInjectionManager.Resolve<IOptionPricingJsonSerializer<Price>>();
-                            IOptionPricingJsonSerializer<List<Option>> serializerOptionList = optionPricingInterfaceServiceRegistration.DependencyInjectionManager.Resolve<IOptionPricingJsonSerializer<List<Option>>>();
-                            IOptionPricingJsonSerializer<List<Price>> serializerPriceList = optionPricingInterfaceServiceRegistration.DependencyInjectionManager.Resolve<IOptionPricingJsonSerializer<List<Price>>>();
-                            IOptionPricingPersistenceService optionPricingPersistenceService = optionPricingInterfaceServiceRegistration.DependencyInjectionManager.Resolve<IOptionPricingPersistenceService>();
 
                             var mqMessage = eventArgs.Socket.ReceiveMultipartMessage(3);
                             var id = mqMessage.First;
-                            RequestType requestType = (RequestType) Enum.Parse(typeof(RequestType), mqMessage[2].ConvertToString());
-                            var content = ""; 
-                            if (requestType != RequestType.GetAllOptions && requestType != RequestType.GetAllPrices) // payload expected
-                            {
-                                content = mqMessage[3].ConvertToString();
-                            }
+                            RequestType requestType = (RequestType)Enum.Parse(typeof(RequestType), mqMessage[2].ConvertToString());
+                            var content = mqMessage[3].ConvertToString();
                             logger.Debug("Front received request : " + requestType);
 
                             ThreadPool.QueueUserWorkItem(ctx =>
                              {
-                                // The worker
-                                // Parameters are available from the context.
-                                var context = (Tuple<NetMQFrame, RequestType, string>)ctx;
+                                 // The worker
+                                 // Parameters are available from the context.
+                                 var context = (Tuple<NetMQFrame, RequestType, string>)ctx;
                                  var clientId = context.Item1;
 
-                                // Send message to server's backend which then will return the reply to the client
-                                using (var workerConnection = new DealerSocket())
+                                 // Send message to server's backend which then will return the reply to the client
+                                 using (var workerConnection = new DealerSocket())
                                  {
                                      workerConnection.Connect($"tcp://{backEndPoint}:{backPort}");
                                      logger.Debug($"[{Thread.CurrentThread.ManagedThreadId}] worker");
@@ -85,31 +78,9 @@ namespace OptionPricingInterfaceService
                                      messageToClient.Append(clientId);
                                      messageToClient.AppendEmptyFrame();
 
-                                     if (requestType == RequestType.PriceOption)
-                                     {
-                                         var message = context.Item3;
-                                         Price price = serializerPrice.Deserialize(message);
-                                         optionPricingPersistenceService.InsertOption(price.OptionObj);
-                                         PricingModelEnum pricingModel = price.PricingModel;
-                                         IOptionPricingMethodService pricer = optionPricingInterfaceServiceRegistration.DependencyInjectionManager.ResolveWithKey<IOptionPricingMethodService>(pricingModel.ToString());
-                                         Price priceComputed = new Price(pricer.Price(price.OptionObj), price.PricingModel, price.OptionObj);
-                                         optionPricingPersistenceService.InsertPrice(priceComputed);
-                                         string serializedPrice = serializerPrice.Serialize(priceComputed);
-                                         messageToClient.Append(serializedPrice);
-                                     }
-                                     else if (requestType == RequestType.GetAllOptions)
-                                     {
-                                         List<Option> optionList = optionPricingPersistenceService.GetAllOptions();
-                                         string serializedRes = serializerOptionList.Serialize(optionList);
-                                         messageToClient.Append(serializedRes);
-                                     }
-                                     else if (requestType == RequestType.GetAllPrices)
-                                     {
-                                         List<Price> priceList = optionPricingPersistenceService.GetAllPrices();
-                                         string serializedRes = serializerPriceList.Serialize(priceList);
-                                         messageToClient.Append(serializedRes);
-                                     }
-
+                                     IRequestHandler requestHandler = optionPricingInterfaceServiceRegistration.DependencyInjectionManager.ResolveWithKey<IRequestHandler>(requestType.ToString());
+                                     string serializedRes = requestHandler.HandleRequest(context.Item3, optionPricingInterfaceServiceRegistration.DependencyInjectionManager);
+                                     messageToClient.Append(serializedRes);
                                      workerConnection.SendMultipartMessage(messageToClient);
                                  }
                              }, Tuple.Create(id, requestType, content));

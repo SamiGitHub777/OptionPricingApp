@@ -75,11 +75,15 @@
 
             <Viewbox Grid.Column="1" Grid.Row="8" Stretch="Uniform">
                 <TextBlock>
-                    <Hyperlink Command="{Binding AccessGitHub}" CommandParameter="{Binding}">
-                    <TextBlock Text="DIGISTRAT-Team/OptionPricingApp"/>
-                    </Hyperlink>
+                <Hyperlink Command="{Binding OpenHttpLinkCommand}" 
+                           CommandParameter="https://github.com/DIGISTRAT-Team/OptionPricingApp"
+                           ToolTip="Team GitHub"
+                           Foreground="#383660">
+                  DIGISTRAT-Team/OptionPricingApp
+                </Hyperlink>
                 </TextBlock>
             </Viewbox>
         </Grid>
+
     </Grid>
 </UserControl>

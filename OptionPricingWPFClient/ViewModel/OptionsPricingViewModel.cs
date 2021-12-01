@@ -81,6 +81,7 @@ namespace OptionPricingWPFClient.ViewModel
         {
             this.PriceCommand = new RelayCommand(OnClickPriceCommand);
             this.modelArgsValidator = modelArgsValidator;
+            this.optionPricingModel = optionPricingModel;
         }
 
         public void OnClickPriceCommand()
