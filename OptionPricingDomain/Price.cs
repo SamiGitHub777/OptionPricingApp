@@ -5,12 +5,12 @@ namespace OptionPricingDomain
 {
     public class Price
     {
-        public double PriceValue { get; private set; }
+        public double? PriceValue { get; private set; }
         public PricingModelEnum PricingModel { get; private set; }
         public Option OptionObj { get; private set; }
 
 
-        public Price(double priceValue, PricingModelEnum pricingModel, Option optionObj)
+        public Price(double? priceValue, PricingModelEnum pricingModel, Option optionObj)
         {
             IsPriceValid(priceValue, pricingModel, optionObj);
             this.PriceValue = priceValue;
@@ -18,7 +18,7 @@ namespace OptionPricingDomain
             this.OptionObj = optionObj;
         }
 
-        private void IsPriceValid(double price, PricingModelEnum pricingModel, Option option)
+        private void IsPriceValid(double? price, PricingModelEnum pricingModel, Option option)
         {
             if (price < 0)
             {
@@ -26,7 +26,7 @@ namespace OptionPricingDomain
             }
             if (PricingModelEnum.UNKNOWN == pricingModel)
             {
-                throw new ArgumentException("Pricing model not allowed");
+                //throw new ArgumentException("Pricing model not allowed"); can be unknown if we have options inserted in db but not priced and we need to wrap this option in a price
             }
             if (option == null)
             {

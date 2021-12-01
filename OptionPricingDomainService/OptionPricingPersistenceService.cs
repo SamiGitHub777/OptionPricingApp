@@ -12,6 +12,8 @@ namespace OptionPricingDomainService
         void InsertPrice(Price price);
 
         List<Option> GetAllOptions();
+        List<Price> GetAllPrices();
+
     }
     public class OptionPricingPersistenceService : IOptionPricingPersistenceService
     {
@@ -51,6 +53,17 @@ namespace OptionPricingDomainService
             List<Option> res = optionRepository.GetAllOptions();
             stopwatch.Stop();
             logger.Info($"Option list fetch done in {stopwatch.Elapsed}");
+            return res;
+        }
+
+        public List<Price> GetAllPrices()
+        {
+            logger.Info("Start price list fetch");
+            Stopwatch stopwatch = new Stopwatch();
+            stopwatch.Start();
+            List<Price> res = optionRepository.GetAllPrices();
+            stopwatch.Stop();
+            logger.Info($"Price list fetch done in {stopwatch.Elapsed}");
             return res;
         }
     }

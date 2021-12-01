@@ -56,13 +56,14 @@ namespace OptionPricingInterfaceService
                             optionPricingInterfaceServiceRegistration.Register();
                             IOptionPricingJsonSerializer<Price> serializerPrice = optionPricingInterfaceServiceRegistration.DependencyInjectionManager.Resolve<IOptionPricingJsonSerializer<Price>>();
                             IOptionPricingJsonSerializer<List<Option>> serializerOptionList = optionPricingInterfaceServiceRegistration.DependencyInjectionManager.Resolve<IOptionPricingJsonSerializer<List<Option>>>();
+                            IOptionPricingJsonSerializer<List<Price>> serializerPriceList = optionPricingInterfaceServiceRegistration.DependencyInjectionManager.Resolve<IOptionPricingJsonSerializer<List<Price>>>();
                             IOptionPricingPersistenceService optionPricingPersistenceService = optionPricingInterfaceServiceRegistration.DependencyInjectionManager.Resolve<IOptionPricingPersistenceService>();
 
                             var mqMessage = eventArgs.Socket.ReceiveMultipartMessage(3);
                             var id = mqMessage.First;
                             RequestType requestType = (RequestType) Enum.Parse(typeof(RequestType), mqMessage[2].ConvertToString());
                             var content = ""; 
-                            if (requestType != RequestType.GetAllOptions) // payload expected
+                            if (requestType != RequestType.GetAllOptions && requestType != RequestType.GetAllPrices) // payload expected
                             {
                                 content = mqMessage[3].ConvertToString();
                             }
@@ -100,6 +101,12 @@ namespace OptionPricingInterfaceService
                                      {
                                          List<Option> optionList = optionPricingPersistenceService.GetAllOptions();
                                          string serializedRes = serializerOptionList.Serialize(optionList);
+                                         messageToClient.Append(serializedRes);
+                                     }
+                                     else if (requestType == RequestType.GetAllPrices)
+                                     {
+                                         List<Price> priceList = optionPricingPersistenceService.GetAllPrices();
+                                         string serializedRes = serializerPriceList.Serialize(priceList);
                                          messageToClient.Append(serializedRes);
                                      }
 

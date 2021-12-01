@@ -35,6 +35,7 @@ namespace OptionPricingWPFClient.ViewModel
             AddHamburgerMenuIconItem("Home", "Home", PackIconMaterialKind.Home, ServiceLocator.Current.GetInstance<HomeViewModel>());
             AddHamburgerMenuIconItem("Options Pricing", "Options Pricing", PackIconMaterialKind.CurrencyEur, ServiceLocator.Current.GetInstance<OptionsPricingViewModel>());
             AddHamburgerMenuIconItem("Option List", "Option List", PackIconMaterialKind.Tools, ServiceLocator.Current.GetInstance<OptionsListViewModel>());
+            AddHamburgerMenuIconItem("Price List", "Price List", PackIconMaterialKind.Toolbox, ServiceLocator.Current.GetInstance<PricesListViewModel>());
             AddHamburgerMenuIconItem("Information", "Information", PackIconMaterialKind.InformationOutline, ServiceLocator.Current.GetInstance<InformationViewModel>());
         }
     }

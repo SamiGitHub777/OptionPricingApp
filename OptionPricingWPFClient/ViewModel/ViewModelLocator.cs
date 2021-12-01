@@ -29,6 +29,7 @@ namespace OptionPricingWPFClient.ViewModel
         public HomeViewModel Home => ServiceLocator.Current.GetInstance<HomeViewModel>();
         public OptionsPricingViewModel OptionsPricing => ServiceLocator.Current.GetInstance<OptionsPricingViewModel>();
         public OptionsListViewModel OptionsList => ServiceLocator.Current.GetInstance<OptionsListViewModel>();
+        public PricesListViewModel PricesList => ServiceLocator.Current.GetInstance<PricesListViewModel>();
         public InformationViewModel Information => ServiceLocator.Current.GetInstance<InformationViewModel>();
 
 
@@ -41,13 +42,16 @@ namespace OptionPricingWPFClient.ViewModel
             SimpleIoc.Default.Register<OptionsPricingViewModel>();
             SimpleIoc.Default.Register<IOptionPricingModel, OptionPricingModel>();
             SimpleIoc.Default.Register<OptionsListViewModel>();
+            SimpleIoc.Default.Register<PricesListViewModel>();
             SimpleIoc.Default.Register<InformationViewModel>();
             SimpleIoc.Default.Register<IModelArgsValidator, ModelArgsValidator>();
             SimpleIoc.Default.Register<IOptionPricingJsonSerializer<Price>, OptionPricingJsonSerializer<Price>>();
             SimpleIoc.Default.Register<IOptionPricingJsonSerializer<List<Option>>, OptionPricingJsonSerializer<List<Option>>>();
+            SimpleIoc.Default.Register<IOptionPricingJsonSerializer<List<Price>>, OptionPricingJsonSerializer<List<Price>>>();
             SimpleIoc.Default.Register<IOptionPricingTcpTransportManager>(() => new OptionPricingTcpTransportManager("localhost", 5555,
                 ServiceLocator.Current.GetInstance<IOptionPricingJsonSerializer<Price>>(),
-                ServiceLocator.Current.GetInstance<IOptionPricingJsonSerializer<List<Option>>>()));
+                ServiceLocator.Current.GetInstance<IOptionPricingJsonSerializer<List<Option>>>(),
+                ServiceLocator.Current.GetInstance<IOptionPricingJsonSerializer<List<Price>>>()));
             SimpleIoc.Default.Register<IModelDomainConverter, ModelDomainConverter>();
         }
 

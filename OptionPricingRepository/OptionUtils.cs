@@ -16,6 +16,16 @@ namespace OptionPricingRepository
             return new Option(contractType, maturity, optionParameters.Strike, optionParameters.RiskFreeRate, udl);
         }
 
+        public static Price GetPriceFromDTO(PriceDTO price)
+        {
+            ContractEnum contractType = (ContractEnum)Enum.Parse(typeof(ContractEnum), price.ContractType.Value);
+            DateTime optionMatu = price.Maturity;
+            Maturity maturity = new Maturity(optionMatu.Year, optionMatu.Month, optionMatu.Day);
+            UnderlyingTypeEnum udlType = (UnderlyingTypeEnum)Enum.Parse(typeof(UnderlyingTypeEnum), price.UnderlyingType.Value.ToUpper());
+            Underlying udl = new Underlying(price.Underlying, price.Spot, udlType, price.Volatility);
+            Option option = new Option(contractType, maturity, price.Strike, price.RiskFreeRate, udl);
+            return new Price(price.Price ?? null, (OptionPricingDomain.PricingModelEnum)Enum.Parse(typeof(OptionPricingDomain.PricingModelEnum), price.Model.ToString()), option);
+        }
         public static C_sharp_training.Common.ContractEnum OptionTypeToPricingEnum(Option option)
         {
             return (C_sharp_training.Common.ContractEnum)Enum.Parse(typeof(C_sharp_training.Common.ContractEnum), option.OptionType.ToString().ToUpper());

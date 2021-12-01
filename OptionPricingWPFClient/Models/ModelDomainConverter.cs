@@ -62,7 +62,7 @@ namespace OptionPricingWPFClient.Models
             }
             else
             {
-                throw new ArgumentException("Unable to convert Model Enum to Domain Enum");
+                throw new ArgumentException("Unable to convert Enum");
             }
         }
 

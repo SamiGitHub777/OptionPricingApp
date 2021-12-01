@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\Sami B\source\repos\OptionPricingWPFClient\App.xaml
-7656034137
+81632631866
 
-25-1789607072
+27-149220892
 170448075100
-MainWindow.xaml;Resources\Icons.xaml;Resources\IconsNonShared.xaml;View\HomeView.xaml;View\InformationView.xaml;View\OptionsListView.xaml;View\OptionsPricingView.xaml;
+MainWindow.xaml;Resources\Icons.xaml;Resources\IconsNonShared.xaml;View\HomeView.xaml;View\InformationView.xaml;View\OptionsListView.xaml;View\OptionsPricingView.xaml;View\PricesListView.xaml;
 
 False
 

@@ -109,8 +109,8 @@ C:\Users\Sami B\source\repos\WPFHelper\bin\Debug\MahApps.Metro.IconPacks.Zondico
 C:\Users\Sami B\source\repos\WPFHelper\bin\Debug\Microsoft.Xaml.Behaviors.pdb
 C:\Users\Sami B\source\repos\WPFHelper\bin\Debug\Microsoft.Xaml.Behaviors.xml
 C:\Users\Sami B\source\repos\WPFHelper\bin\Debug\de\MahApps.Metro.resources.dll
+C:\Users\Sami B\source\repos\WPFHelper\obj\Debug\WPFHelper.csprojAssemblyReference.cache
 C:\Users\Sami B\source\repos\WPFHelper\obj\Debug\WPFHelper.csproj.CoreCompileInputs.cache
 C:\Users\Sami B\source\repos\WPFHelper\obj\Debug\WPFHelper.csproj.CopyComplete
 C:\Users\Sami B\source\repos\WPFHelper\obj\Debug\WPFHelper.dll
 C:\Users\Sami B\source\repos\WPFHelper\obj\Debug\WPFHelper.pdb
-C:\Users\Sami B\source\repos\WPFHelper\obj\Debug\WPFHelper.csprojAssemblyReference.cache

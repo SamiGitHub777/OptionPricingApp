@@ -28,6 +28,7 @@ namespace OptionPricingWPFClient.ViewModel
 
         public enum PricingModelEnum
         {
+            UNKNOWN,
             BlackScholes,
             BinomialTree,
             MonteCarlo
@@ -68,8 +69,8 @@ namespace OptionPricingWPFClient.ViewModel
         public DateTime? Maturity { get => _maturity; set => SetProperty<DateTime?>(ref _maturity, value); }
         private DateTime? _maturity;
 
-        public double Price { get => _price; set => SetProperty<double>(ref _price, value); }
-        private double _price;
+        public double? Price { get => _price; set => SetProperty<double?>(ref _price, value); }
+        private double? _price;
 
         public ICommand PriceCommand { get; set; }
         private readonly IModelArgsValidator modelArgsValidator;

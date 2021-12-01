@@ -15,6 +15,7 @@ namespace OptionPricingRepository
         double? GetPriceByOptionAndPricingModel(Option option, PricingModelEnum pricingModel);
         void DeleteOption(Option optionDTO, PricingModelEnum pricingModel);
         void DeletePrice(Price price);
+        List<Price> GetAllPrices();
     }
 
     public class OptionRepository : IOptionRepository
@@ -45,6 +46,15 @@ namespace OptionPricingRepository
             List<OptionParametersDTO> optionDTOList = optionDao.GetAllOptions();
             return optionDTOList
                     .Select(x => OptionUtils.GetOptionFromDTO(x))
+                    .ToList();
+        }
+
+        public List<Price> GetAllPrices()
+        {
+            logger.Debug($"GetAllPrices");
+            List<PriceDTO> priceDTOList = optionDao.GetAllPrices();
+            return priceDTOList
+                    .Select(x => OptionUtils.GetPriceFromDTO(x))
                     .ToList();
         }
 

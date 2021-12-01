@@ -19,6 +19,7 @@ namespace OptionPricingInterfaceService
         {
             DependencyInjectionManager.RegisterType<IOptionPricingJsonSerializer<Price>, OptionPricingJsonSerializer<Price>>();
             DependencyInjectionManager.RegisterType<IOptionPricingJsonSerializer<List<Option>>, OptionPricingJsonSerializer<List<Option>>>();
+            DependencyInjectionManager.RegisterType<IOptionPricingJsonSerializer<List<Price>>, OptionPricingJsonSerializer<List<Price>>>();
             DependencyInjectionManager.RegisterType<IOptionDAO, OptionDAO>();
             DependencyInjectionManager.RegisterType<IOptionRepository, OptionRepository>();
             DependencyInjectionManager.RegisterType<IOptionPricingPersistenceService, OptionPricingPersistenceService>();

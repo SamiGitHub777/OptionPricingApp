@@ -15,6 +15,8 @@ namespace OptionPricingDAO
         void InsertPrice(PriceDTO price);
         List<OptionParametersDTO> GetAllOptions();
 
+        List<PriceDTO> GetAllPrices();
+
         double? GetPriceByOptionAndPricingModel(OptionParametersDTO optionParameters, PricingModelEnum pricingModel);
         void DeleteOption(OptionParametersDTO optionDTO, PricingModelEnum pricingModel);
         void DeletePrice(PriceDTO price);
@@ -77,17 +79,51 @@ namespace OptionPricingDAO
                 }
             }
         }
-        /*
-    select optionParam.strike, optionParam.riskFreeRate, optionParam.maturity, optionParam.volatility, udl.underlyingName, optionTbl.OptionType, udl.spot, udlType.productType
-	from tblOptionParameters optionParam
-	INNER JOIN tblOptionType optionTbl
-		on optionParam.idOptionType = optionTbl.idOptionType
-			INNER JOIN tblUnderlying udl
-				on optionParam.idUnderlying = udl.idUnderlying
-					INNER JOIN tblProduct udlType
-						on udl.idUnderlyingProduct = udlType.idProduct;
-        */
 
+        public List<PriceDTO> GetAllPrices()
+        {
+            List<PriceDTO> result = new List<PriceDTO>();
+            using (SqlConnection connection = new SqlConnection(CONNECTION_STRING))
+            {
+                connection.Open();
+                SqlCommand cmd = new SqlCommand("select * from [dbo].[VWOptionPrice]", connection);
+                try
+                {
+                    using (SqlDataReader rdr = cmd.ExecuteReader())
+                    {
+                        while (rdr.Read())
+                        {
+                            double strike = (double)rdr["strike"];
+                            double riskFreeRate = (double)rdr["riskFreeRate"];
+                            DateTime maturity = (DateTime)rdr["maturity"];
+                            double volatility = (double)rdr["volatility"];
+                            string udlName = (string)rdr["underlyingName"];
+                            ContractEnum contractType = ContractEnum.FromString((string)rdr["OptionType"]);
+                            double spot = (double)rdr["spot"];
+                            UnderlyingTypeEnum udlType = UnderlyingTypeEnum.FromString((string)rdr["productType"]);
+                            double? priceValue = null;
+                            if ((object)DBNull.Value != rdr["Price"])
+                            {
+                                priceValue = (double?)rdr["Price"];
+                            }
+                            PricingModelEnum pricingModel = PricingModelEnum.UNKNOWN;
+                            if ((object)DBNull.Value != rdr["pricingModel"])
+                            {
+                                pricingModel = PricingModelEnum.FromString((string)rdr["pricingModel"]);
+                            }
+                            OptionParametersDTO option = new OptionParametersDTO(contractType, strike, riskFreeRate, maturity, volatility, udlName, spot, udlType);
+                            PriceDTO price = new PriceDTO(option, priceValue, pricingModel);
+                            result.Add(price);
+                        }
+                    }
+                }
+                catch (Exception e)
+                {
+                    logger.Error($"Error while running GetAllPrices {e}");
+                }
+            }
+            return result;
+        }
         public List<OptionParametersDTO> GetAllOptions()
         {
             List<OptionParametersDTO> result = new List<OptionParametersDTO>();

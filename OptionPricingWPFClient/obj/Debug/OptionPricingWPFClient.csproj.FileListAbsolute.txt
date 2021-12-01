@@ -171,6 +171,7 @@ C:\Users\Sami B\source\repos\OptionPricingWPFClient\obj\Debug\View\HomeView.g.cs
 C:\Users\Sami B\source\repos\OptionPricingWPFClient\obj\Debug\View\InformationView.g.cs
 C:\Users\Sami B\source\repos\OptionPricingWPFClient\obj\Debug\View\OptionsListView.g.cs
 C:\Users\Sami B\source\repos\OptionPricingWPFClient\obj\Debug\View\OptionsPricingView.g.cs
+C:\Users\Sami B\source\repos\OptionPricingWPFClient\obj\Debug\View\PricesListView.g.cs
 C:\Users\Sami B\source\repos\OptionPricingWPFClient\obj\Debug\App.g.cs
 C:\Users\Sami B\source\repos\OptionPricingWPFClient\obj\Debug\GeneratedInternalTypeHelper.g.cs
 C:\Users\Sami B\source\repos\OptionPricingWPFClient\obj\Debug\OptionPricingWPFClient_MarkupCompile.cache
@@ -181,6 +182,7 @@ C:\Users\Sami B\source\repos\OptionPricingWPFClient\obj\Debug\View\HomeView.baml
 C:\Users\Sami B\source\repos\OptionPricingWPFClient\obj\Debug\View\InformationView.baml
 C:\Users\Sami B\source\repos\OptionPricingWPFClient\obj\Debug\View\OptionsListView.baml
 C:\Users\Sami B\source\repos\OptionPricingWPFClient\obj\Debug\View\OptionsPricingView.baml
+C:\Users\Sami B\source\repos\OptionPricingWPFClient\obj\Debug\View\PricesListView.baml
 C:\Users\Sami B\source\repos\OptionPricingWPFClient\obj\Debug\OptionPricingWPFClient.g.resources
 C:\Users\Sami B\source\repos\OptionPricingWPFClient\obj\Debug\OptionPricingWPFClient.Properties.Resources.resources
 C:\Users\Sami B\source\repos\OptionPricingWPFClient\obj\Debug\OptionPricingWPFClient.csproj.GenerateResource.cache
@@ -188,4 +190,3 @@ C:\Users\Sami B\source\repos\OptionPricingWPFClient\obj\Debug\OptionPricingWPFCl
 C:\Users\Sami B\source\repos\OptionPricingWPFClient\obj\Debug\OptionPricingWPFClient.csproj.CopyComplete
 C:\Users\Sami B\source\repos\OptionPricingWPFClient\obj\Debug\OptionPricingWPFClient.exe
 C:\Users\Sami B\source\repos\OptionPricingWPFClient\obj\Debug\OptionPricingWPFClient.pdb
-C:\Users\Sami B\source\repos\OptionPricingWPFClient\bin\Debug\log4net.config

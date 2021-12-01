@@ -41,7 +41,24 @@ namespace OptionPricingDAO.Common
 			return UNKNOWN;
 		}
 
-        public override bool Equals(object obj)
+		public override string ToString()
+		{
+			if (BLACKSCHOLESVALUE.Equals(this.Value, StringComparison.InvariantCultureIgnoreCase))
+			{
+				return "BlackScholes";
+			}
+			if (BINOMIALTREEVALUE.Equals(this.Value, StringComparison.InvariantCultureIgnoreCase))
+			{
+				return "BinomialTree";
+			}
+			if (MONTECARLOVALUE.Equals(this.Value, StringComparison.InvariantCultureIgnoreCase))
+			{
+				return "MonteCarlo";
+			}
+			return "UNKNOWN";
+		}
+
+		public override bool Equals(object obj)
         {
             return obj is PricingModelEnum @enum &&
                    Value.Equals(@enum.Value);

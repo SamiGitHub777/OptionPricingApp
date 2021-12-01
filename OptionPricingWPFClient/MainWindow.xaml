@@ -6,14 +6,20 @@
         xmlns:Themes="clr-namespace:Microsoft.Windows.Themes;assembly=PresentationFramework.Aero" 
         xmlns:local="clr-namespace:OptionPricingWPFClient"
         mc:Ignorable="d"
-        Title="{Binding Title}" Height="450" Width="800" Icon="/Images/icon.png"
         DataContext="{Binding Source={StaticResource Locator}, Path=Main}"
         xmlns:view="clr-namespace:OptionPricingWPFClient.View"
         xmlns:viewModel="clr-namespace:OptionPricingWPFClient.ViewModel"
         xmlns:core="clr-namespace:OptionPricingWPFClient.Core"
         xmlns:mah="http://metro.mahapps.com/winfx/xaml/controls"
-        WindowStartupLocation="CenterScreen"
         BorderThickness="0"
+        AllowsTransparency="True" 
+        Background="Transparent"
+        WindowStyle="None"
+        WindowState="Normal"
+        WindowStartupLocation="CenterScreen"
+        MouseMove="Window_MouseMove"
+        MouseDoubleClick="Window_MouseDoubleClick"
+        Icon="/Images/icon.png"
         >
     <!--The white lines are part of the Popup template, which is what MenuItem uses at its default template. Need to override it to remove these linings.-->
     <Window.Resources>
@@ -65,6 +71,9 @@
             </DataTemplate>
             <DataTemplate DataType="{x:Type viewModel:OptionsListViewModel}">
                 <view:OptionsListView DataContext="{Binding Source={StaticResource Locator}, Path=OptionsList}"/>
+            </DataTemplate>
+            <DataTemplate DataType="{x:Type viewModel:PricesListViewModel}">
+                <view:PricesListView DataContext="{Binding Source={StaticResource Locator}, Path=PricesList}"/>
             </DataTemplate>
             <DataTemplate DataType="{x:Type viewModel:InformationViewModel}">
                 <view:InformationView DataContext="{Binding Source={StaticResource Locator}, Path=Information}"/>

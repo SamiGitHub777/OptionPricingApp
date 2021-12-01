@@ -9,12 +9,12 @@ namespace OptionPricingWPFClient.Models
 {
     public class PriceModel
     {
-        public double PriceValue { get; private set; }
+        public double? PriceValue { get; private set; }
         public PricingModelEnum PricingModel { get; private set; }
         public OptionModel OptionObj { get; private set; }
 
 
-        public PriceModel(double priceValue, PricingModelEnum pricingModel, OptionModel optionObj)
+        public PriceModel(double? priceValue, PricingModelEnum pricingModel, OptionModel optionObj)
         {
             this.PriceValue = priceValue;
             this.PricingModel = pricingModel;

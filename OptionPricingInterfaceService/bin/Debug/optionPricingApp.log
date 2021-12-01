@@ -12662,3 +12662,186 @@ Error Number :8023,State :1,Class :16
  stacktrace:System.Threading.ExecutionContext.RunInternal > System.Threading.QueueUserWorkItemCallback.WaitCallback_Context > OptionPricingInterfaceService.NetMQServer+<>c__DisplayClass6_1.<StartListening>b__2 > OptionPricingDomainService.OptionPricingPersistenceService.GetAllOptions > LoggerLog4net.Log4NetWrapper.Info 
  2021-11-30 12:36:27 – DEBUG LoggerLog4net.Log4NetWrapper [3] Back received message, route to client 
  stacktrace:NetMQ.NetMQPoller.Run > NetMQ.NetMQPoller.RunPoller > NetMQ.NetMQSocket.InvokeEvents > OptionPricingInterfaceService.NetMQServer+<>c__DisplayClass6_0.<StartListening>b__1 > LoggerLog4net.Log4NetWrapper.Debug 
+ 2021-11-30 16:02:04 – INFO  LoggerLog4net.Log4NetWrapper [3] Starting server 
+ stacktrace:System.Threading.Tasks.Task.Execute > System.Threading.Tasks.Task.InnerInvoke > OptionPricingInterfaceService.Program+<>c__DisplayClass0_0.<Main>b__0 > OptionPricingInterfaceService.NetMQServer.StartListening > LoggerLog4net.Log4NetWrapper.Info 
+ 2021-11-30 16:04:01 – INFO  LoggerLog4net.Log4NetWrapper [3] Starting server 
+ stacktrace:System.Threading.Tasks.Task.Execute > System.Threading.Tasks.Task.InnerInvoke > OptionPricingInterfaceService.Program+<>c__DisplayClass0_0.<Main>b__0 > OptionPricingInterfaceService.NetMQServer.StartListening > LoggerLog4net.Log4NetWrapper.Info 
+ 2021-11-30 16:04:11 – DEBUG LoggerLog4net.Log4NetWrapper [3] Front received request : GetAllPrices 
+ stacktrace:NetMQ.NetMQPoller.Run > NetMQ.NetMQPoller.RunPoller > NetMQ.NetMQSocket.InvokeEvents > OptionPricingInterfaceService.NetMQServer.<StartListening>b__6_0 > LoggerLog4net.Log4NetWrapper.Debug 
+ 2021-11-30 16:04:11 – DEBUG LoggerLog4net.Log4NetWrapper [4] [4] worker 
+ stacktrace:System.Threading.ExecutionContext.Run > System.Threading.ExecutionContext.RunInternal > System.Threading.QueueUserWorkItemCallback.WaitCallback_Context > OptionPricingInterfaceService.NetMQServer+<>c__DisplayClass6_1.<StartListening>b__2 > LoggerLog4net.Log4NetWrapper.Debug 
+ 2021-11-30 16:04:11 – INFO  LoggerLog4net.Log4NetWrapper [4] Start price list fetch 
+ stacktrace:System.Threading.ExecutionContext.RunInternal > System.Threading.QueueUserWorkItemCallback.WaitCallback_Context > OptionPricingInterfaceService.NetMQServer+<>c__DisplayClass6_1.<StartListening>b__2 > OptionPricingDomainService.OptionPricingPersistenceService.GetAllPrices > LoggerLog4net.Log4NetWrapper.Info 
+ 2021-11-30 16:04:11 – DEBUG LoggerLog4net.Log4NetWrapper [4] GetAllPrices 
+ stacktrace:System.Threading.QueueUserWorkItemCallback.WaitCallback_Context > OptionPricingInterfaceService.NetMQServer+<>c__DisplayClass6_1.<StartListening>b__2 > OptionPricingDomainService.OptionPricingPersistenceService.GetAllPrices > OptionPricingRepository.OptionRepository.GetAllPrices > LoggerLog4net.Log4NetWrapper.Debug 
+ 2021-11-30 16:04:11 – ERROR LoggerLog4net.Log4NetWrapper [4] Error while running GetAllPrices System.InvalidCastException: Le cast spécifié n'est pas valide.
+   à OptionPricingDAO.OptionDAO.GetAllPrices() dans C:\Users\Sami B\source\repos\OptionPricingDAO\OptionDAO.cs:ligne 104 
+ stacktrace:OptionPricingInterfaceService.NetMQServer+<>c__DisplayClass6_1.<StartListening>b__2 > OptionPricingDomainService.OptionPricingPersistenceService.GetAllPrices > OptionPricingRepository.OptionRepository.GetAllPrices > OptionPricingDAO.OptionDAO.GetAllPrices > LoggerLog4net.Log4NetWrapper.Error 
+ 2021-11-30 16:04:11 – INFO  LoggerLog4net.Log4NetWrapper [4] Price list fetch done in 00:00:00.1791401 
+ stacktrace:System.Threading.ExecutionContext.RunInternal > System.Threading.QueueUserWorkItemCallback.WaitCallback_Context > OptionPricingInterfaceService.NetMQServer+<>c__DisplayClass6_1.<StartListening>b__2 > OptionPricingDomainService.OptionPricingPersistenceService.GetAllPrices > LoggerLog4net.Log4NetWrapper.Info 
+ 2021-11-30 16:04:11 – DEBUG LoggerLog4net.Log4NetWrapper [3] Back received message, route to client 
+ stacktrace:NetMQ.NetMQPoller.Run > NetMQ.NetMQPoller.RunPoller > NetMQ.NetMQSocket.InvokeEvents > OptionPricingInterfaceService.NetMQServer+<>c__DisplayClass6_0.<StartListening>b__1 > LoggerLog4net.Log4NetWrapper.Debug 
+ 2021-11-30 16:05:17 – INFO  LoggerLog4net.Log4NetWrapper [3] Starting server 
+ stacktrace:System.Threading.Tasks.Task.Execute > System.Threading.Tasks.Task.InnerInvoke > OptionPricingInterfaceService.Program+<>c__DisplayClass0_0.<Main>b__0 > OptionPricingInterfaceService.NetMQServer.StartListening > LoggerLog4net.Log4NetWrapper.Info 
+ 2021-11-30 16:05:36 – DEBUG LoggerLog4net.Log4NetWrapper [3] Front received request : GetAllPrices 
+ stacktrace:NetMQ.NetMQPoller.Run > NetMQ.NetMQPoller.RunPoller > NetMQ.NetMQSocket.InvokeEvents > OptionPricingInterfaceService.NetMQServer.<StartListening>b__6_0 > LoggerLog4net.Log4NetWrapper.Debug 
+ 2021-11-30 16:05:36 – DEBUG LoggerLog4net.Log4NetWrapper [4] [4] worker 
+ stacktrace:System.Threading.ExecutionContext.Run > System.Threading.ExecutionContext.RunInternal > System.Threading.QueueUserWorkItemCallback.WaitCallback_Context > OptionPricingInterfaceService.NetMQServer+<>c__DisplayClass6_1.<StartListening>b__2 > LoggerLog4net.Log4NetWrapper.Debug 
+ 2021-11-30 16:05:36 – INFO  LoggerLog4net.Log4NetWrapper [4] Start price list fetch 
+ stacktrace:System.Threading.ExecutionContext.RunInternal > System.Threading.QueueUserWorkItemCallback.WaitCallback_Context > OptionPricingInterfaceService.NetMQServer+<>c__DisplayClass6_1.<StartListening>b__2 > OptionPricingDomainService.OptionPricingPersistenceService.GetAllPrices > LoggerLog4net.Log4NetWrapper.Info 
+ 2021-11-30 16:05:36 – DEBUG LoggerLog4net.Log4NetWrapper [4] GetAllPrices 
+ stacktrace:System.Threading.QueueUserWorkItemCallback.WaitCallback_Context > OptionPricingInterfaceService.NetMQServer+<>c__DisplayClass6_1.<StartListening>b__2 > OptionPricingDomainService.OptionPricingPersistenceService.GetAllPrices > OptionPricingRepository.OptionRepository.GetAllPrices > LoggerLog4net.Log4NetWrapper.Debug 
+ 2021-11-30 16:17:23 – INFO  LoggerLog4net.Log4NetWrapper [3] Starting server 
+ stacktrace:System.Threading.Tasks.Task.Execute > System.Threading.Tasks.Task.InnerInvoke > OptionPricingInterfaceService.Program+<>c__DisplayClass0_0.<Main>b__0 > OptionPricingInterfaceService.NetMQServer.StartListening > LoggerLog4net.Log4NetWrapper.Info 
+ 2021-11-30 16:17:26 – DEBUG LoggerLog4net.Log4NetWrapper [3] Front received request : GetAllPrices 
+ stacktrace:NetMQ.NetMQPoller.Run > NetMQ.NetMQPoller.RunPoller > NetMQ.NetMQSocket.InvokeEvents > OptionPricingInterfaceService.NetMQServer.<StartListening>b__6_0 > LoggerLog4net.Log4NetWrapper.Debug 
+ 2021-11-30 16:17:26 – DEBUG LoggerLog4net.Log4NetWrapper [4] [4] worker 
+ stacktrace:System.Threading.ExecutionContext.Run > System.Threading.ExecutionContext.RunInternal > System.Threading.QueueUserWorkItemCallback.WaitCallback_Context > OptionPricingInterfaceService.NetMQServer+<>c__DisplayClass6_1.<StartListening>b__2 > LoggerLog4net.Log4NetWrapper.Debug 
+ 2021-11-30 16:17:26 – INFO  LoggerLog4net.Log4NetWrapper [4] Start price list fetch 
+ stacktrace:System.Threading.ExecutionContext.RunInternal > System.Threading.QueueUserWorkItemCallback.WaitCallback_Context > OptionPricingInterfaceService.NetMQServer+<>c__DisplayClass6_1.<StartListening>b__2 > OptionPricingDomainService.OptionPricingPersistenceService.GetAllPrices > LoggerLog4net.Log4NetWrapper.Info 
+ 2021-11-30 16:17:26 – DEBUG LoggerLog4net.Log4NetWrapper [4] GetAllPrices 
+ stacktrace:System.Threading.QueueUserWorkItemCallback.WaitCallback_Context > OptionPricingInterfaceService.NetMQServer+<>c__DisplayClass6_1.<StartListening>b__2 > OptionPricingDomainService.OptionPricingPersistenceService.GetAllPrices > OptionPricingRepository.OptionRepository.GetAllPrices > LoggerLog4net.Log4NetWrapper.Debug 
+ 2021-11-30 16:17:53 – ERROR LoggerLog4net.Log4NetWrapper [4] Error while running GetAllPrices System.InvalidCastException: Le cast spécifié n'est pas valide.
+   à OptionPricingDAO.OptionDAO.GetAllPrices() dans C:\Users\Sami B\source\repos\OptionPricingDAO\OptionDAO.cs:ligne 104 
+ stacktrace:OptionPricingInterfaceService.NetMQServer+<>c__DisplayClass6_1.<StartListening>b__2 > OptionPricingDomainService.OptionPricingPersistenceService.GetAllPrices > OptionPricingRepository.OptionRepository.GetAllPrices > OptionPricingDAO.OptionDAO.GetAllPrices > LoggerLog4net.Log4NetWrapper.Error 
+ 2021-11-30 16:17:53 – INFO  LoggerLog4net.Log4NetWrapper [4] Price list fetch done in 00:00:26.1932993 
+ stacktrace:System.Threading.ExecutionContext.RunInternal > System.Threading.QueueUserWorkItemCallback.WaitCallback_Context > OptionPricingInterfaceService.NetMQServer+<>c__DisplayClass6_1.<StartListening>b__2 > OptionPricingDomainService.OptionPricingPersistenceService.GetAllPrices > LoggerLog4net.Log4NetWrapper.Info 
+ 2021-11-30 16:17:53 – DEBUG LoggerLog4net.Log4NetWrapper [3] Back received message, route to client 
+ stacktrace:NetMQ.NetMQPoller.Run > NetMQ.NetMQPoller.RunPoller > NetMQ.NetMQSocket.InvokeEvents > OptionPricingInterfaceService.NetMQServer+<>c__DisplayClass6_0.<StartListening>b__1 > LoggerLog4net.Log4NetWrapper.Debug 
+ 2021-11-30 16:22:27 – INFO  LoggerLog4net.Log4NetWrapper [3] Starting server 
+ stacktrace:System.Threading.Tasks.Task.Execute > System.Threading.Tasks.Task.InnerInvoke > OptionPricingInterfaceService.Program+<>c__DisplayClass0_0.<Main>b__0 > OptionPricingInterfaceService.NetMQServer.StartListening > LoggerLog4net.Log4NetWrapper.Info 
+ 2021-11-30 16:22:31 – DEBUG LoggerLog4net.Log4NetWrapper [3] Front received request : GetAllPrices 
+ stacktrace:NetMQ.NetMQPoller.Run > NetMQ.NetMQPoller.RunPoller > NetMQ.NetMQSocket.InvokeEvents > OptionPricingInterfaceService.NetMQServer.<StartListening>b__6_0 > LoggerLog4net.Log4NetWrapper.Debug 
+ 2021-11-30 16:22:31 – DEBUG LoggerLog4net.Log4NetWrapper [4] [4] worker 
+ stacktrace:System.Threading.ExecutionContext.Run > System.Threading.ExecutionContext.RunInternal > System.Threading.QueueUserWorkItemCallback.WaitCallback_Context > OptionPricingInterfaceService.NetMQServer+<>c__DisplayClass6_1.<StartListening>b__2 > LoggerLog4net.Log4NetWrapper.Debug 
+ 2021-11-30 16:22:31 – INFO  LoggerLog4net.Log4NetWrapper [4] Start price list fetch 
+ stacktrace:System.Threading.ExecutionContext.RunInternal > System.Threading.QueueUserWorkItemCallback.WaitCallback_Context > OptionPricingInterfaceService.NetMQServer+<>c__DisplayClass6_1.<StartListening>b__2 > OptionPricingDomainService.OptionPricingPersistenceService.GetAllPrices > LoggerLog4net.Log4NetWrapper.Info 
+ 2021-11-30 16:22:31 – DEBUG LoggerLog4net.Log4NetWrapper [4] GetAllPrices 
+ stacktrace:System.Threading.QueueUserWorkItemCallback.WaitCallback_Context > OptionPricingInterfaceService.NetMQServer+<>c__DisplayClass6_1.<StartListening>b__2 > OptionPricingDomainService.OptionPricingPersistenceService.GetAllPrices > OptionPricingRepository.OptionRepository.GetAllPrices > LoggerLog4net.Log4NetWrapper.Debug 
+ 2021-11-30 16:22:48 – ERROR LoggerLog4net.Log4NetWrapper [4] Error while running GetAllPrices System.InvalidCastException: Impossible d'effectuer un cast d'un objet de type 'System.DBNull' en type 'System.String'.
+   à OptionPricingDAO.OptionDAO.GetAllPrices() dans C:\Users\Sami B\source\repos\OptionPricingDAO\OptionDAO.cs:ligne 104 
+ stacktrace:OptionPricingInterfaceService.NetMQServer+<>c__DisplayClass6_1.<StartListening>b__2 > OptionPricingDomainService.OptionPricingPersistenceService.GetAllPrices > OptionPricingRepository.OptionRepository.GetAllPrices > OptionPricingDAO.OptionDAO.GetAllPrices > LoggerLog4net.Log4NetWrapper.Error 
+ 2021-11-30 16:22:48 – INFO  LoggerLog4net.Log4NetWrapper [4] Price list fetch done in 00:00:17.1064540 
+ stacktrace:System.Threading.ExecutionContext.RunInternal > System.Threading.QueueUserWorkItemCallback.WaitCallback_Context > OptionPricingInterfaceService.NetMQServer+<>c__DisplayClass6_1.<StartListening>b__2 > OptionPricingDomainService.OptionPricingPersistenceService.GetAllPrices > LoggerLog4net.Log4NetWrapper.Info 
+ 2021-11-30 16:22:49 – DEBUG LoggerLog4net.Log4NetWrapper [3] Back received message, route to client 
+ stacktrace:NetMQ.NetMQPoller.Run > NetMQ.NetMQPoller.RunPoller > NetMQ.NetMQSocket.InvokeEvents > OptionPricingInterfaceService.NetMQServer+<>c__DisplayClass6_0.<StartListening>b__1 > LoggerLog4net.Log4NetWrapper.Debug 
+ 2021-11-30 16:22:53 – DEBUG LoggerLog4net.Log4NetWrapper [3] Front received request : GetAllPrices 
+ stacktrace:NetMQ.NetMQPoller.Run > NetMQ.NetMQPoller.RunPoller > NetMQ.NetMQSocket.InvokeEvents > OptionPricingInterfaceService.NetMQServer.<StartListening>b__6_0 > LoggerLog4net.Log4NetWrapper.Debug 
+ 2021-11-30 16:22:53 – DEBUG LoggerLog4net.Log4NetWrapper [4] [4] worker 
+ stacktrace:System.Threading.ExecutionContext.Run > System.Threading.ExecutionContext.RunInternal > System.Threading.QueueUserWorkItemCallback.WaitCallback_Context > OptionPricingInterfaceService.NetMQServer+<>c__DisplayClass6_1.<StartListening>b__2 > LoggerLog4net.Log4NetWrapper.Debug 
+ 2021-11-30 16:22:53 – INFO  LoggerLog4net.Log4NetWrapper [4] Start price list fetch 
+ stacktrace:System.Threading.ExecutionContext.RunInternal > System.Threading.QueueUserWorkItemCallback.WaitCallback_Context > OptionPricingInterfaceService.NetMQServer+<>c__DisplayClass6_1.<StartListening>b__2 > OptionPricingDomainService.OptionPricingPersistenceService.GetAllPrices > LoggerLog4net.Log4NetWrapper.Info 
+ 2021-11-30 16:22:53 – DEBUG LoggerLog4net.Log4NetWrapper [4] GetAllPrices 
+ stacktrace:System.Threading.QueueUserWorkItemCallback.WaitCallback_Context > OptionPricingInterfaceService.NetMQServer+<>c__DisplayClass6_1.<StartListening>b__2 > OptionPricingDomainService.OptionPricingPersistenceService.GetAllPrices > OptionPricingRepository.OptionRepository.GetAllPrices > LoggerLog4net.Log4NetWrapper.Debug 
+ 2021-11-30 16:24:26 – INFO  LoggerLog4net.Log4NetWrapper [3] Starting server 
+ stacktrace:System.Threading.Tasks.Task.Execute > System.Threading.Tasks.Task.InnerInvoke > OptionPricingInterfaceService.Program+<>c__DisplayClass0_0.<Main>b__0 > OptionPricingInterfaceService.NetMQServer.StartListening > LoggerLog4net.Log4NetWrapper.Info 
+ 2021-11-30 16:24:36 – DEBUG LoggerLog4net.Log4NetWrapper [3] Front received request : GetAllPrices 
+ stacktrace:NetMQ.NetMQPoller.Run > NetMQ.NetMQPoller.RunPoller > NetMQ.NetMQSocket.InvokeEvents > OptionPricingInterfaceService.NetMQServer.<StartListening>b__6_0 > LoggerLog4net.Log4NetWrapper.Debug 
+ 2021-11-30 16:24:36 – DEBUG LoggerLog4net.Log4NetWrapper [4] [4] worker 
+ stacktrace:System.Threading.ExecutionContext.Run > System.Threading.ExecutionContext.RunInternal > System.Threading.QueueUserWorkItemCallback.WaitCallback_Context > OptionPricingInterfaceService.NetMQServer+<>c__DisplayClass6_1.<StartListening>b__2 > LoggerLog4net.Log4NetWrapper.Debug 
+ 2021-11-30 16:24:36 – INFO  LoggerLog4net.Log4NetWrapper [4] Start price list fetch 
+ stacktrace:System.Threading.ExecutionContext.RunInternal > System.Threading.QueueUserWorkItemCallback.WaitCallback_Context > OptionPricingInterfaceService.NetMQServer+<>c__DisplayClass6_1.<StartListening>b__2 > OptionPricingDomainService.OptionPricingPersistenceService.GetAllPrices > LoggerLog4net.Log4NetWrapper.Info 
+ 2021-11-30 16:24:36 – DEBUG LoggerLog4net.Log4NetWrapper [4] GetAllPrices 
+ stacktrace:System.Threading.QueueUserWorkItemCallback.WaitCallback_Context > OptionPricingInterfaceService.NetMQServer+<>c__DisplayClass6_1.<StartListening>b__2 > OptionPricingDomainService.OptionPricingPersistenceService.GetAllPrices > OptionPricingRepository.OptionRepository.GetAllPrices > LoggerLog4net.Log4NetWrapper.Debug 
+ 2021-11-30 16:27:48 – INFO  LoggerLog4net.Log4NetWrapper [3] Starting server 
+ stacktrace:System.Threading.Tasks.Task.Execute > System.Threading.Tasks.Task.InnerInvoke > OptionPricingInterfaceService.Program+<>c__DisplayClass0_0.<Main>b__0 > OptionPricingInterfaceService.NetMQServer.StartListening > LoggerLog4net.Log4NetWrapper.Info 
+ 2021-11-30 16:27:53 – DEBUG LoggerLog4net.Log4NetWrapper [3] Front received request : GetAllPrices 
+ stacktrace:NetMQ.NetMQPoller.Run > NetMQ.NetMQPoller.RunPoller > NetMQ.NetMQSocket.InvokeEvents > OptionPricingInterfaceService.NetMQServer.<StartListening>b__6_0 > LoggerLog4net.Log4NetWrapper.Debug 
+ 2021-11-30 16:27:53 – DEBUG LoggerLog4net.Log4NetWrapper [4] [4] worker 
+ stacktrace:System.Threading.ExecutionContext.Run > System.Threading.ExecutionContext.RunInternal > System.Threading.QueueUserWorkItemCallback.WaitCallback_Context > OptionPricingInterfaceService.NetMQServer+<>c__DisplayClass6_1.<StartListening>b__2 > LoggerLog4net.Log4NetWrapper.Debug 
+ 2021-11-30 16:27:53 – INFO  LoggerLog4net.Log4NetWrapper [4] Start price list fetch 
+ stacktrace:System.Threading.ExecutionContext.RunInternal > System.Threading.QueueUserWorkItemCallback.WaitCallback_Context > OptionPricingInterfaceService.NetMQServer+<>c__DisplayClass6_1.<StartListening>b__2 > OptionPricingDomainService.OptionPricingPersistenceService.GetAllPrices > LoggerLog4net.Log4NetWrapper.Info 
+ 2021-11-30 16:27:53 – DEBUG LoggerLog4net.Log4NetWrapper [4] GetAllPrices 
+ stacktrace:System.Threading.QueueUserWorkItemCallback.WaitCallback_Context > OptionPricingInterfaceService.NetMQServer+<>c__DisplayClass6_1.<StartListening>b__2 > OptionPricingDomainService.OptionPricingPersistenceService.GetAllPrices > OptionPricingRepository.OptionRepository.GetAllPrices > LoggerLog4net.Log4NetWrapper.Debug 
+ 2021-11-30 16:28:37 – INFO  LoggerLog4net.Log4NetWrapper [3] Starting server 
+ stacktrace:System.Threading.Tasks.Task.Execute > System.Threading.Tasks.Task.InnerInvoke > OptionPricingInterfaceService.Program+<>c__DisplayClass0_0.<Main>b__0 > OptionPricingInterfaceService.NetMQServer.StartListening > LoggerLog4net.Log4NetWrapper.Info 
+ 2021-11-30 16:28:41 – DEBUG LoggerLog4net.Log4NetWrapper [3] Front received request : GetAllPrices 
+ stacktrace:NetMQ.NetMQPoller.Run > NetMQ.NetMQPoller.RunPoller > NetMQ.NetMQSocket.InvokeEvents > OptionPricingInterfaceService.NetMQServer.<StartListening>b__6_0 > LoggerLog4net.Log4NetWrapper.Debug 
+ 2021-11-30 16:28:41 – DEBUG LoggerLog4net.Log4NetWrapper [4] [4] worker 
+ stacktrace:System.Threading.ExecutionContext.Run > System.Threading.ExecutionContext.RunInternal > System.Threading.QueueUserWorkItemCallback.WaitCallback_Context > OptionPricingInterfaceService.NetMQServer+<>c__DisplayClass6_1.<StartListening>b__2 > LoggerLog4net.Log4NetWrapper.Debug 
+ 2021-11-30 16:28:41 – INFO  LoggerLog4net.Log4NetWrapper [4] Start price list fetch 
+ stacktrace:System.Threading.ExecutionContext.RunInternal > System.Threading.QueueUserWorkItemCallback.WaitCallback_Context > OptionPricingInterfaceService.NetMQServer+<>c__DisplayClass6_1.<StartListening>b__2 > OptionPricingDomainService.OptionPricingPersistenceService.GetAllPrices > LoggerLog4net.Log4NetWrapper.Info 
+ 2021-11-30 16:28:41 – DEBUG LoggerLog4net.Log4NetWrapper [4] GetAllPrices 
+ stacktrace:System.Threading.QueueUserWorkItemCallback.WaitCallback_Context > OptionPricingInterfaceService.NetMQServer+<>c__DisplayClass6_1.<StartListening>b__2 > OptionPricingDomainService.OptionPricingPersistenceService.GetAllPrices > OptionPricingRepository.OptionRepository.GetAllPrices > LoggerLog4net.Log4NetWrapper.Debug 
+ 2021-11-30 16:31:05 – INFO  LoggerLog4net.Log4NetWrapper [3] Starting server 
+ stacktrace:System.Threading.Tasks.Task.Execute > System.Threading.Tasks.Task.InnerInvoke > OptionPricingInterfaceService.Program+<>c__DisplayClass0_0.<Main>b__0 > OptionPricingInterfaceService.NetMQServer.StartListening > LoggerLog4net.Log4NetWrapper.Info 
+ 2021-11-30 16:31:09 – DEBUG LoggerLog4net.Log4NetWrapper [3] Front received request : GetAllPrices 
+ stacktrace:NetMQ.NetMQPoller.Run > NetMQ.NetMQPoller.RunPoller > NetMQ.NetMQSocket.InvokeEvents > OptionPricingInterfaceService.NetMQServer.<StartListening>b__6_0 > LoggerLog4net.Log4NetWrapper.Debug 
+ 2021-11-30 16:31:09 – DEBUG LoggerLog4net.Log4NetWrapper [4] [4] worker 
+ stacktrace:System.Threading.ExecutionContext.Run > System.Threading.ExecutionContext.RunInternal > System.Threading.QueueUserWorkItemCallback.WaitCallback_Context > OptionPricingInterfaceService.NetMQServer+<>c__DisplayClass6_1.<StartListening>b__2 > LoggerLog4net.Log4NetWrapper.Debug 
+ 2021-11-30 16:31:09 – INFO  LoggerLog4net.Log4NetWrapper [4] Start price list fetch 
+ stacktrace:System.Threading.ExecutionContext.RunInternal > System.Threading.QueueUserWorkItemCallback.WaitCallback_Context > OptionPricingInterfaceService.NetMQServer+<>c__DisplayClass6_1.<StartListening>b__2 > OptionPricingDomainService.OptionPricingPersistenceService.GetAllPrices > LoggerLog4net.Log4NetWrapper.Info 
+ 2021-11-30 16:31:09 – DEBUG LoggerLog4net.Log4NetWrapper [4] GetAllPrices 
+ stacktrace:System.Threading.QueueUserWorkItemCallback.WaitCallback_Context > OptionPricingInterfaceService.NetMQServer+<>c__DisplayClass6_1.<StartListening>b__2 > OptionPricingDomainService.OptionPricingPersistenceService.GetAllPrices > OptionPricingRepository.OptionRepository.GetAllPrices > LoggerLog4net.Log4NetWrapper.Debug 
+ 2021-11-30 16:35:52 – INFO  LoggerLog4net.Log4NetWrapper [3] Starting server 
+ stacktrace:System.Threading.Tasks.Task.Execute > System.Threading.Tasks.Task.InnerInvoke > OptionPricingInterfaceService.Program+<>c__DisplayClass0_0.<Main>b__0 > OptionPricingInterfaceService.NetMQServer.StartListening > LoggerLog4net.Log4NetWrapper.Info 
+ 2021-11-30 16:35:56 – DEBUG LoggerLog4net.Log4NetWrapper [3] Front received request : GetAllPrices 
+ stacktrace:NetMQ.NetMQPoller.Run > NetMQ.NetMQPoller.RunPoller > NetMQ.NetMQSocket.InvokeEvents > OptionPricingInterfaceService.NetMQServer.<StartListening>b__6_0 > LoggerLog4net.Log4NetWrapper.Debug 
+ 2021-11-30 16:35:56 – DEBUG LoggerLog4net.Log4NetWrapper [4] [4] worker 
+ stacktrace:System.Threading.ExecutionContext.Run > System.Threading.ExecutionContext.RunInternal > System.Threading.QueueUserWorkItemCallback.WaitCallback_Context > OptionPricingInterfaceService.NetMQServer+<>c__DisplayClass6_1.<StartListening>b__2 > LoggerLog4net.Log4NetWrapper.Debug 
+ 2021-11-30 16:35:56 – INFO  LoggerLog4net.Log4NetWrapper [4] Start price list fetch 
+ stacktrace:System.Threading.ExecutionContext.RunInternal > System.Threading.QueueUserWorkItemCallback.WaitCallback_Context > OptionPricingInterfaceService.NetMQServer+<>c__DisplayClass6_1.<StartListening>b__2 > OptionPricingDomainService.OptionPricingPersistenceService.GetAllPrices > LoggerLog4net.Log4NetWrapper.Info 
+ 2021-11-30 16:35:56 – DEBUG LoggerLog4net.Log4NetWrapper [4] GetAllPrices 
+ stacktrace:System.Threading.QueueUserWorkItemCallback.WaitCallback_Context > OptionPricingInterfaceService.NetMQServer+<>c__DisplayClass6_1.<StartListening>b__2 > OptionPricingDomainService.OptionPricingPersistenceService.GetAllPrices > OptionPricingRepository.OptionRepository.GetAllPrices > LoggerLog4net.Log4NetWrapper.Debug 
+ 2021-11-30 16:35:59 – INFO  LoggerLog4net.Log4NetWrapper [4] Price list fetch done in 00:00:02.8229077 
+ stacktrace:System.Threading.ExecutionContext.RunInternal > System.Threading.QueueUserWorkItemCallback.WaitCallback_Context > OptionPricingInterfaceService.NetMQServer+<>c__DisplayClass6_1.<StartListening>b__2 > OptionPricingDomainService.OptionPricingPersistenceService.GetAllPrices > LoggerLog4net.Log4NetWrapper.Info 
+ 2021-11-30 16:36:00 – DEBUG LoggerLog4net.Log4NetWrapper [3] Back received message, route to client 
+ stacktrace:NetMQ.NetMQPoller.Run > NetMQ.NetMQPoller.RunPoller > NetMQ.NetMQSocket.InvokeEvents > OptionPricingInterfaceService.NetMQServer+<>c__DisplayClass6_0.<StartListening>b__1 > LoggerLog4net.Log4NetWrapper.Debug 
+ 2021-11-30 16:38:42 – INFO  LoggerLog4net.Log4NetWrapper [3] Starting server 
+ stacktrace:System.Threading.Tasks.Task.Execute > System.Threading.Tasks.Task.InnerInvoke > OptionPricingInterfaceService.Program+<>c__DisplayClass0_0.<Main>b__0 > OptionPricingInterfaceService.NetMQServer.StartListening > LoggerLog4net.Log4NetWrapper.Info 
+ 2021-11-30 16:38:54 – DEBUG LoggerLog4net.Log4NetWrapper [3] Front received request : GetAllPrices 
+ stacktrace:NetMQ.NetMQPoller.Run > NetMQ.NetMQPoller.RunPoller > NetMQ.NetMQSocket.InvokeEvents > OptionPricingInterfaceService.NetMQServer.<StartListening>b__6_0 > LoggerLog4net.Log4NetWrapper.Debug 
+ 2021-11-30 16:38:54 – DEBUG LoggerLog4net.Log4NetWrapper [4] [4] worker 
+ stacktrace:System.Threading.ExecutionContext.Run > System.Threading.ExecutionContext.RunInternal > System.Threading.QueueUserWorkItemCallback.WaitCallback_Context > OptionPricingInterfaceService.NetMQServer+<>c__DisplayClass6_1.<StartListening>b__2 > LoggerLog4net.Log4NetWrapper.Debug 
+ 2021-11-30 16:38:54 – INFO  LoggerLog4net.Log4NetWrapper [4] Start price list fetch 
+ stacktrace:System.Threading.ExecutionContext.RunInternal > System.Threading.QueueUserWorkItemCallback.WaitCallback_Context > OptionPricingInterfaceService.NetMQServer+<>c__DisplayClass6_1.<StartListening>b__2 > OptionPricingDomainService.OptionPricingPersistenceService.GetAllPrices > LoggerLog4net.Log4NetWrapper.Info 
+ 2021-11-30 16:38:54 – DEBUG LoggerLog4net.Log4NetWrapper [4] GetAllPrices 
+ stacktrace:System.Threading.QueueUserWorkItemCallback.WaitCallback_Context > OptionPricingInterfaceService.NetMQServer+<>c__DisplayClass6_1.<StartListening>b__2 > OptionPricingDomainService.OptionPricingPersistenceService.GetAllPrices > OptionPricingRepository.OptionRepository.GetAllPrices > LoggerLog4net.Log4NetWrapper.Debug 
+ 2021-11-30 16:38:57 – INFO  LoggerLog4net.Log4NetWrapper [4] Price list fetch done in 00:00:02.5635641 
+ stacktrace:System.Threading.ExecutionContext.RunInternal > System.Threading.QueueUserWorkItemCallback.WaitCallback_Context > OptionPricingInterfaceService.NetMQServer+<>c__DisplayClass6_1.<StartListening>b__2 > OptionPricingDomainService.OptionPricingPersistenceService.GetAllPrices > LoggerLog4net.Log4NetWrapper.Info 
+ 2021-11-30 16:38:57 – DEBUG LoggerLog4net.Log4NetWrapper [3] Back received message, route to client 
+ stacktrace:NetMQ.NetMQPoller.Run > NetMQ.NetMQPoller.RunPoller > NetMQ.NetMQSocket.InvokeEvents > OptionPricingInterfaceService.NetMQServer+<>c__DisplayClass6_0.<StartListening>b__1 > LoggerLog4net.Log4NetWrapper.Debug 
+ 2021-11-30 16:40:41 – INFO  LoggerLog4net.Log4NetWrapper [3] Starting server 
+ stacktrace:System.Threading.Tasks.Task.Execute > System.Threading.Tasks.Task.InnerInvoke > OptionPricingInterfaceService.Program+<>c__DisplayClass0_0.<Main>b__0 > OptionPricingInterfaceService.NetMQServer.StartListening > LoggerLog4net.Log4NetWrapper.Info 
+ 2021-11-30 16:41:00 – DEBUG LoggerLog4net.Log4NetWrapper [3] Front received request : GetAllPrices 
+ stacktrace:NetMQ.NetMQPoller.Run > NetMQ.NetMQPoller.RunPoller > NetMQ.NetMQSocket.InvokeEvents > OptionPricingInterfaceService.NetMQServer.<StartListening>b__6_0 > LoggerLog4net.Log4NetWrapper.Debug 
+ 2021-11-30 16:41:00 – DEBUG LoggerLog4net.Log4NetWrapper [4] [4] worker 
+ stacktrace:System.Threading.ExecutionContext.Run > System.Threading.ExecutionContext.RunInternal > System.Threading.QueueUserWorkItemCallback.WaitCallback_Context > OptionPricingInterfaceService.NetMQServer+<>c__DisplayClass6_1.<StartListening>b__2 > LoggerLog4net.Log4NetWrapper.Debug 
+ 2021-11-30 16:41:00 – INFO  LoggerLog4net.Log4NetWrapper [4] Start price list fetch 
+ stacktrace:System.Threading.ExecutionContext.RunInternal > System.Threading.QueueUserWorkItemCallback.WaitCallback_Context > OptionPricingInterfaceService.NetMQServer+<>c__DisplayClass6_1.<StartListening>b__2 > OptionPricingDomainService.OptionPricingPersistenceService.GetAllPrices > LoggerLog4net.Log4NetWrapper.Info 
+ 2021-11-30 16:41:00 – DEBUG LoggerLog4net.Log4NetWrapper [4] GetAllPrices 
+ stacktrace:System.Threading.QueueUserWorkItemCallback.WaitCallback_Context > OptionPricingInterfaceService.NetMQServer+<>c__DisplayClass6_1.<StartListening>b__2 > OptionPricingDomainService.OptionPricingPersistenceService.GetAllPrices > OptionPricingRepository.OptionRepository.GetAllPrices > LoggerLog4net.Log4NetWrapper.Debug 
+ 2021-11-30 16:41:10 – INFO  LoggerLog4net.Log4NetWrapper [4] Price list fetch done in 00:00:09.6261970 
+ stacktrace:System.Threading.ExecutionContext.RunInternal > System.Threading.QueueUserWorkItemCallback.WaitCallback_Context > OptionPricingInterfaceService.NetMQServer+<>c__DisplayClass6_1.<StartListening>b__2 > OptionPricingDomainService.OptionPricingPersistenceService.GetAllPrices > LoggerLog4net.Log4NetWrapper.Info 
+ 2021-11-30 16:41:10 – DEBUG LoggerLog4net.Log4NetWrapper [3] Back received message, route to client 
+ stacktrace:NetMQ.NetMQPoller.Run > NetMQ.NetMQPoller.RunPoller > NetMQ.NetMQSocket.InvokeEvents > OptionPricingInterfaceService.NetMQServer+<>c__DisplayClass6_0.<StartListening>b__1 > LoggerLog4net.Log4NetWrapper.Debug 
+ 2021-11-30 16:54:26 – INFO  LoggerLog4net.Log4NetWrapper [3] Starting server 
+ stacktrace:System.Threading.Tasks.Task.Execute > System.Threading.Tasks.Task.InnerInvoke > OptionPricingInterfaceService.Program+<>c__DisplayClass0_0.<Main>b__0 > OptionPricingInterfaceService.NetMQServer.StartListening > LoggerLog4net.Log4NetWrapper.Info 
+ 2021-11-30 16:54:44 – DEBUG LoggerLog4net.Log4NetWrapper [3] Front received request : GetAllPrices 
+ stacktrace:NetMQ.NetMQPoller.Run > NetMQ.NetMQPoller.RunPoller > NetMQ.NetMQSocket.InvokeEvents > OptionPricingInterfaceService.NetMQServer.<StartListening>b__6_0 > LoggerLog4net.Log4NetWrapper.Debug 
+ 2021-11-30 16:54:44 – DEBUG LoggerLog4net.Log4NetWrapper [4] [4] worker 
+ stacktrace:System.Threading.ExecutionContext.Run > System.Threading.ExecutionContext.RunInternal > System.Threading.QueueUserWorkItemCallback.WaitCallback_Context > OptionPricingInterfaceService.NetMQServer+<>c__DisplayClass6_1.<StartListening>b__2 > LoggerLog4net.Log4NetWrapper.Debug 
+ 2021-11-30 16:54:44 – INFO  LoggerLog4net.Log4NetWrapper [4] Start price list fetch 
+ stacktrace:System.Threading.ExecutionContext.RunInternal > System.Threading.QueueUserWorkItemCallback.WaitCallback_Context > OptionPricingInterfaceService.NetMQServer+<>c__DisplayClass6_1.<StartListening>b__2 > OptionPricingDomainService.OptionPricingPersistenceService.GetAllPrices > LoggerLog4net.Log4NetWrapper.Info 
+ 2021-11-30 16:54:44 – DEBUG LoggerLog4net.Log4NetWrapper [4] GetAllPrices 
+ stacktrace:System.Threading.QueueUserWorkItemCallback.WaitCallback_Context > OptionPricingInterfaceService.NetMQServer+<>c__DisplayClass6_1.<StartListening>b__2 > OptionPricingDomainService.OptionPricingPersistenceService.GetAllPrices > OptionPricingRepository.OptionRepository.GetAllPrices > LoggerLog4net.Log4NetWrapper.Debug 
+ 2021-11-30 16:54:49 – INFO  LoggerLog4net.Log4NetWrapper [4] Price list fetch done in 00:00:04.4036117 
+ stacktrace:System.Threading.ExecutionContext.RunInternal > System.Threading.QueueUserWorkItemCallback.WaitCallback_Context > OptionPricingInterfaceService.NetMQServer+<>c__DisplayClass6_1.<StartListening>b__2 > OptionPricingDomainService.OptionPricingPersistenceService.GetAllPrices > LoggerLog4net.Log4NetWrapper.Info 
+ 2021-11-30 16:54:49 – DEBUG LoggerLog4net.Log4NetWrapper [3] Back received message, route to client 
+ stacktrace:NetMQ.NetMQPoller.Run > NetMQ.NetMQPoller.RunPoller > NetMQ.NetMQSocket.InvokeEvents > OptionPricingInterfaceService.NetMQServer+<>c__DisplayClass6_0.<StartListening>b__1 > LoggerLog4net.Log4NetWrapper.Debug 
+ 2021-12-01 11:51:12 – INFO  LoggerLog4net.Log4NetWrapper [3] Starting server 
+ stacktrace:System.Threading.Tasks.Task.Execute > System.Threading.Tasks.Task.InnerInvoke > OptionPricingInterfaceService.Program+<>c__DisplayClass0_0.<Main>b__0 > OptionPricingInterfaceService.NetMQServer.StartListening > LoggerLog4net.Log4NetWrapper.Info 
+ 2021-12-01 12:12:59 – INFO  LoggerLog4net.Log4NetWrapper [3] Starting server 
+ stacktrace:System.Threading.Tasks.Task.Execute > System.Threading.Tasks.Task.InnerInvoke > OptionPricingInterfaceService.Program+<>c__DisplayClass0_0.<Main>b__0 > OptionPricingInterfaceService.NetMQServer.StartListening > LoggerLog4net.Log4NetWrapper.Info 
+ 2021-12-01 12:13:09 – DEBUG LoggerLog4net.Log4NetWrapper [3] Front received request : GetAllPrices 
+ stacktrace:NetMQ.NetMQPoller.Run > NetMQ.NetMQPoller.RunPoller > NetMQ.NetMQSocket.InvokeEvents > OptionPricingInterfaceService.NetMQServer.<StartListening>b__6_0 > LoggerLog4net.Log4NetWrapper.Debug 
+ 2021-12-01 12:13:09 – DEBUG LoggerLog4net.Log4NetWrapper [4] [4] worker 
+ stacktrace:System.Threading.ExecutionContext.Run > System.Threading.ExecutionContext.RunInternal > System.Threading.QueueUserWorkItemCallback.WaitCallback_Context > OptionPricingInterfaceService.NetMQServer+<>c__DisplayClass6_1.<StartListening>b__2 > LoggerLog4net.Log4NetWrapper.Debug 
+ 2021-12-01 12:13:09 – INFO  LoggerLog4net.Log4NetWrapper [4] Start price list fetch 
+ stacktrace:System.Threading.ExecutionContext.RunInternal > System.Threading.QueueUserWorkItemCallback.WaitCallback_Context > OptionPricingInterfaceService.NetMQServer+<>c__DisplayClass6_1.<StartListening>b__2 > OptionPricingDomainService.OptionPricingPersistenceService.GetAllPrices > LoggerLog4net.Log4NetWrapper.Info 
+ 2021-12-01 12:13:09 – DEBUG LoggerLog4net.Log4NetWrapper [4] GetAllPrices 
+ stacktrace:System.Threading.QueueUserWorkItemCallback.WaitCallback_Context > OptionPricingInterfaceService.NetMQServer+<>c__DisplayClass6_1.<StartListening>b__2 > OptionPricingDomainService.OptionPricingPersistenceService.GetAllPrices > OptionPricingRepository.OptionRepository.GetAllPrices > LoggerLog4net.Log4NetWrapper.Debug 
+ 2021-12-01 12:13:09 – INFO  LoggerLog4net.Log4NetWrapper [4] Price list fetch done in 00:00:00.2070455 
+ stacktrace:System.Threading.ExecutionContext.RunInternal > System.Threading.QueueUserWorkItemCallback.WaitCallback_Context > OptionPricingInterfaceService.NetMQServer+<>c__DisplayClass6_1.<StartListening>b__2 > OptionPricingDomainService.OptionPricingPersistenceService.GetAllPrices > LoggerLog4net.Log4NetWrapper.Info 
+ 2021-12-01 12:13:09 – DEBUG LoggerLog4net.Log4NetWrapper [3] Back received message, route to client 
+ stacktrace:NetMQ.NetMQPoller.Run > NetMQ.NetMQPoller.RunPoller > NetMQ.NetMQSocket.InvokeEvents > OptionPricingInterfaceService.NetMQServer+<>c__DisplayClass6_0.<StartListening>b__1 > LoggerLog4net.Log4NetWrapper.Debug 

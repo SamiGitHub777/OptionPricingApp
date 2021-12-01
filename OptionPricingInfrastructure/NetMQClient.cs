@@ -29,7 +29,8 @@ namespace OptionPricingInfrastructure
                 client.Connect($"tcp://{endPoint}:{port}");
                 IOptionPricingJsonSerializer<Price> optionPricingSerializerPrice = new OptionPricingJsonSerializer<Price>();
                 IOptionPricingJsonSerializer<List<Option>> optionPricingSerializerOptionList = new OptionPricingJsonSerializer<List<Option>>();
-                IOptionPricingTcpTransportManager optionPricingTcpTransportManager = new OptionPricingTcpTransportManager(endPoint, port, optionPricingSerializerPrice, optionPricingSerializerOptionList);
+                IOptionPricingJsonSerializer<List<Price>> optionPricingSerializerPriceList = new OptionPricingJsonSerializer<List<Price>>();
+                IOptionPricingTcpTransportManager optionPricingTcpTransportManager = new OptionPricingTcpTransportManager(endPoint, port, optionPricingSerializerPrice, optionPricingSerializerOptionList, optionPricingSerializerPriceList) ;
                 logger.Info("Waiting for response ...");
                 Price computedPrice = optionPricingTcpTransportManager.PriceOption(initialPrice);
                 logger.Info($"Client received a response : {computedPrice}");
@@ -44,7 +45,8 @@ namespace OptionPricingInfrastructure
                 client.Connect($"tcp://{endPoint}:{port}");
                 IOptionPricingJsonSerializer<Price> optionPricingSerializerPrice = new OptionPricingJsonSerializer<Price>();
                 IOptionPricingJsonSerializer<List<Option>> optionPricingSerializerOptionList = new OptionPricingJsonSerializer<List<Option>>();
-                IOptionPricingTcpTransportManager optionPricingTcpTransportManager = new OptionPricingTcpTransportManager(endPoint, port, optionPricingSerializerPrice, optionPricingSerializerOptionList);
+                IOptionPricingJsonSerializer<List<Price>> optionPricingSerializerPriceList = new OptionPricingJsonSerializer<List<Price>>();
+                IOptionPricingTcpTransportManager optionPricingTcpTransportManager = new OptionPricingTcpTransportManager(endPoint, port, optionPricingSerializerPrice, optionPricingSerializerOptionList, optionPricingSerializerPriceList);
                 logger.Info("Waiting for response ...");
                 var message = new NetMQMessage();
                 message.Append(RequestType.GetAllOptions.ToString());

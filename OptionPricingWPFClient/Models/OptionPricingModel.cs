@@ -11,6 +11,7 @@ namespace OptionPricingWPFClient.Models
     {
         PriceModel PriceOption(PriceModel priceModel);
         List<OptionModel> GetAllOptions();
+        List<PriceModel> GetAllPrices();
     }
     public class OptionPricingModel : IOptionPricingModel
     {
@@ -33,6 +34,13 @@ namespace OptionPricingWPFClient.Models
         {
             return optionPricingTcpTransportManager.GetAllOption()
             .Select(x => modelDomainConverter.ToOptionModel(x))
+            .ToList(); ;
+        }
+
+        public List<PriceModel> GetAllPrices()
+        {
+            return optionPricingTcpTransportManager.GetAllPrices()
+            .Select(x => modelDomainConverter.ToPriceModel(x))
             .ToList(); ;
         }
     }

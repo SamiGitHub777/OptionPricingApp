@@ -1,13 +1,11 @@
 ﻿using OptionPricingDAO.Common;
 using System;
-using System.Collections.Generic;
-using System.Data.SqlTypes;
 
 namespace OptionPricingDAO.DTOs
 {
     public class PriceDTO
     {
-        private double price;
+        private double? price;
 		private PricingModelEnum model;
 		private ContractEnum optionType;
 		private double strike;
@@ -18,7 +16,7 @@ namespace OptionPricingDAO.DTOs
 		private double spot;
 		private UnderlyingTypeEnum underlyingType;
 
-        public double Price {
+        public double? Price {
 			get { return this.price; }
 			set { this.price = value; }
 		}
@@ -60,7 +58,7 @@ namespace OptionPricingDAO.DTOs
 			set { this.underlyingType = value; }
 		}
 
-		public PriceDTO(double price, PricingModelEnum model, ContractEnum optionType, double strike, double riskFreeRate, DateTime maturity,
+		public PriceDTO(double? price, PricingModelEnum model, ContractEnum optionType, double strike, double riskFreeRate, DateTime maturity,
 		double volatility, string underlying, double spot, UnderlyingTypeEnum udlType)
         {
 			this.price = price;
@@ -75,7 +73,7 @@ namespace OptionPricingDAO.DTOs
 			this.underlyingType = udlType;
         }
 
-		public PriceDTO(OptionParametersDTO optionParametersDTO, double price, PricingModelEnum model)
+		public PriceDTO(OptionParametersDTO optionParametersDTO, double? price, PricingModelEnum model)
         {
 			this.price = price;
 			this.model = model;

@@ -15,7 +15,8 @@ namespace OptionPricingClientConsole
             logger.Info("Client is sending a request");
             IOptionPricingJsonSerializer<Price> optionPricingSerializerPrice = new OptionPricingJsonSerializer<Price>();
             IOptionPricingJsonSerializer<List<Option>> optionPricingSerializerOptionList = new OptionPricingJsonSerializer<List<Option>>();
-            IOptionPricingTcpTransportManager optionPricingTcpTransportManager = new OptionPricingTcpTransportManager("localhost", 5555, optionPricingSerializerPrice, optionPricingSerializerOptionList);
+            IOptionPricingJsonSerializer<List<Price>> optionPricingSerializerPriceList = new OptionPricingJsonSerializer<List<Price>>();
+            IOptionPricingTcpTransportManager optionPricingTcpTransportManager = new OptionPricingTcpTransportManager("localhost", 5555, optionPricingSerializerPrice, optionPricingSerializerOptionList, optionPricingSerializerPriceList);
             DateTime today = DateTime.Now;
             Maturity maturity = new Maturity(today.Year + 2, today.Month, today.Day);
             Underlying udl = new Underlying("DE_DAX_TEST", 18000d, UnderlyingTypeEnum.INDEX, 0.3d);

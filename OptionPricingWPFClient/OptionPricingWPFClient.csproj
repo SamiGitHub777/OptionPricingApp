@@ -209,6 +209,7 @@
     <Compile Include="ViewModel\OptionsListViewModel.cs" />
     <Compile Include="ViewModel\OptionsPricingViewModel.cs" />
     <Compile Include="ViewModel\MainViewModel.cs" />
+    <Compile Include="ViewModel\PricesListViewModel.cs" />
     <Compile Include="ViewModel\ViewModelBase.cs" />
     <Compile Include="ViewModel\ViewModelLocator.cs" />
     <Compile Include="View\HomeView.xaml.cs">
@@ -222,6 +223,9 @@
     </Compile>
     <Compile Include="View\OptionsPricingView.xaml.cs">
       <DependentUpon>OptionsPricingView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\PricesListView.xaml.cs">
+      <DependentUpon>PricesListView.xaml</DependentUpon>
     </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -256,6 +260,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="View\OptionsPricingView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\PricesListView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
